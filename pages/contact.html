@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ready Confetti: Contact</title>
+		<meta charset="utf-8">
+		<!-- Set viewport -->
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<!-- Webpage author -->
+		<meta content="John Jordan" name="author">
+		<!-- Description of page -->
+		<meta content="This page contains a form to contact &#8220;Ready Confetti&#8221; with queries, complaints and compliments" name="description">
+		<!-- Link to Source Sans Pro in regular and bold weights from Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+		<!-- Link to Source Serif Pro in regular and bold weights from Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700">
+		<!-- Link to minified Bootstrap style sheet -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet"></link>
+		<!-- Own style sheet link -->
+		<link href="../css/custom.css" rel="stylesheet">
+		<!-- Website logo -->
+		<link href="" rel="icon" type="">
+		<!-- Link to CDN to download Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE9]>
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha384-qFIkRsVO/J5orlMvxK1sgAt2FXT67og+NyFTITYzvbIP1IJavVEKZM7YWczXkwpB" crossorigin="anonymous"></script>
+
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+	    <![endif]-->
+	    <style>
+
+		    * {
+		    	border: 1px solid black !important;
+		    }
+
+	    </style>
+	</head>
+	<body>
+		<div class="container">
+			<!-- This row contains the navigation bar, which is fixed to the top of the viewport -->
+			<div class="row">
+				<!-- The navbar and navbar-default classes are applied to the parent nav element and expand across all the entire length of the screen, regardless of its width -->
+	            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	            	<!-- The next wrapper div with class "container" is needed to center navbar contents
+	            	on very large screens (greater than 1168px) and keep them inline with rest of design content-->
+	            	<div class="container">
+		            	<!-- This anchor tag contains the logomark on its own, for display on small screens -->
+		            	<a href="../index.html"  class="navbar-brand visible-xs">
+		            		<img id="small-logo" src="../img/logomark.gif" alt="The logo mark only of the Ready Confetti site" class="img-responsive visible-xs" />
+		            	</a>
+		            	<!-- This anchor tag contains the full brand logo for larger screens -->
+		            	<a href="../index.html" class="navbar-brand hidden-xs col-sm-6">
+		            		<img src="../img/logo.gif" alt="The full Ready Confetti logo" class="img-responsive" />
+		            	</a>
+		            	<!-- Hamburger menu element that is present from xs to md columns -->
+		            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse" id="hamburger">
+		            		<span class="icon-bar"></span>
+		            		<span class="icon-bar"></span>
+		            		<span class="icon-bar"></span>
+		            	</button> <!-- end of hamburger menu -->
+		            	<!-- Start of div wrapper for hamburger collapsable menu for smaller screens -->
+		            	<!-- This wrapper div given an id that matches the data-target of the data-toggle button -->
+		            	<!-- This div takes up the entire row when the hamburger menu is opened, through use of col-xs-12
+		            	but on larger screens the 'navbar-right' class keeps the nav menu items aligned right as desired -->
+						<div class="col-xs-12 collapse navbar-collapse navbar-right" id="collapse">
+							<!-- The nav and navbar-nav classes are applied to the child nav list element. Reapplied the col-xs-12 class
+							to ensure appropriate display, as without this class, the collapsable nav menu was being clipped -->
+			                <ul class="nav navbar-nav col-xs-12">
+			                    <li>
+			                    	<a href="../index.html">Home</a>
+			                    </li>
+			                    <li>
+			                    	<a href="services.html">Services</a>
+			                    </li>
+			                    <li>
+			                    	<a href="aboutus.html">About Us</a>
+			                    </li>
+
+			                    <li class="active">
+			                    	<a href="#">Contact</a>
+			                    </li>
+			                </ul> <!-- end of ul that contains the nav menu items -->
+		                </div><!-- end of wrapper div for hamburger menu -->
+		            <div><!-- end of inner container div -->
+	            </nav> <!-- end nav row -->
+	        </div> <!-- end row div -->
+
+			<header class="row">
+				<!-- This div contains the content that will only be displayed on extra small screens -->
+				<div class="header-cover col-xs-12 col-sm-6">
+					<h1 class="col-xs-12">Contact Us</h1>
+					<p class="col-xs-12">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores animi nam ducimus doloribus officiis reiciendis fugit saepe. Incidunt suscipit in minus voluptate, laboriosam recusandae culpa ut debitis rerum error cumque.
+					</p>
+				</div> <!-- end of div for header content  -->
+
+				<!-- start of wrapper for RIGHT-hand side content of section which is just an image. Only displayed on small screens onwards-->
+				<div class="col-sm-6 hidden-xs">
+					<!-- Class of center-block applied to this image to center inside parent element -->
+					<img src="http://placehold.it/500x200" alt="Image of a legal document" class="img-responsive center-block">
+				</div>
+				<!-- end of wrapper for RIGHT-hand side content of section -->
+			</header>
+			<!-- end of header row -->
+
+			<!-- start of section with sign-up form -->
+			<section class="row">
+				<h2 class="text-center">Contact Form</h2>
+				<p class="text-center">Let us know what you have to say!</p>
+				<!-- Start of wrapper div for form for form styling purposes -->
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 form-wrapper">
+					<!-- Start of sign-up FORM element. Script runs on submission to display an alert to user -->
+					<form id="contact-form" action="#" method="get">
+						<!-- .form-group added to input elements for styling purposes -->
+						<!-- start of form-group class -->
+						<div class="form-group">
+							<label for="input-first-name">Your First Name</label>
+							<input type="text" class="form-control" id="input-first-name" placeholder="Enter your first name" required="" pattern="^[a-zA-Z]+$"><!-- This expression matches only strings that consist of one or more letters only, as you would expect in a name. Special characters not accepted. -->
+						</div>
+						<!-- end of form group -->
+
+						<!-- .form-group added to input elements for styling purposes -->
+						<div class="form-group">
+							<label for="input-surname">Your Surname</label>
+							<input type="text" class="form-control" id="input-surname" placeholder="Enter your surname" required="" pattern="^[a-zA-Z]+$"><!-- This expression matches only strings that consist of one or more letters only, as you would expect in a name. Special characters not accepted. -->
+						</div>
+						<!-- end of form group -->
+
+						<!-- .form-group added to input elements for styling purposes -->
+						<div class="form-group">
+							<label for="input-email">Your E-mail</label>
+							<input type="email" class="form-control" id="input-email" placeholder="Enter email" required="">
+						</div>
+						<!-- end of form group -->
+
+						<!-- This next part creates a radio button group -->
+						<!-- .form-group added to input elements for styling purposes -->
+						<div class="form-group">
+							<label>Do you have a</label>
+
+							<!-- This next div is a column that contains the various radio button options -->
+							<div class="from-group col-xs-12" id="radio-options">
+								<div class="col-sm-3" id="first-radio-option">
+									<input type="radio" name="sign-up-radio" id="first-radio-option" required="" value="Question" checked="">
+									<label for="first-radio-option">
+										Question
+									</label>
+								</div> <!-- end of radio group option one -->
+
+								<div class="col-sm-4">
+									<input type="radio" name="sign-up-radio" id="second-radio-option" required="" value="Complaint">
+									<label for="second-radio-option">
+										Complaint
+									</label>
+								</div> <!-- end of radio group option two -->
+								<div class="col-sm-5">
+									<input type="radio" name="sign-up-radio" id="third-radio-option" required="" value="Compliment">
+									<label for="third-radio-option">
+										Compliment
+									</label>
+								</div>
+								<!-- end of radio group option three -->
+							</div>
+							<!-- end of form-group div that contains radio button options -->
+
+						</div>
+						<!-- end of form-group div that contains entire radio button form group -->
+
+						<!-- Text area input-->
+						<div class="form-group">
+							<label for="user-text">Your Text</label>
+							<textarea class="form-control" id="user-text" placeholder="Type your question, complaint or compliment here" required=""></textarea>
+						</div>
+						<!-- end of Text area input -->
+						<div class="col-xs-12 btn-wrapper">
+							<button class="btn btn-block center-block" type="submit">Submit</button>
+						</div>
+
+					</form>
+					<!-- end of SIGN-UP FORM element -->
+				</div>
+				<!-- End of wrapper div for form styling purposes -->
+				<button id="my-slidedown-button" class="col-xs-12 btn btn-default ">Click me to open footer</button>
+			</section>
+			<!-- end of section with sign-up form -->
+
+			<footer class="row">
+				<!-- Start of test code -->
+				<!-- <h2 id="footer-header" class="col-xs-12">This is the footer</h2>
+				<p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque vel doloremque laborum. Quaerat nulla eum in ullam adipisci veritatis voluptatibus quibusdam doloremque architecto, quae ea impedit voluptates a numquam!</p>
+				<button id="my-slideup-button" class="col-xs-12 btn btn-default ">Click me</button> -->
+				<!-- End of test code -->
+
+				<section class="col-xs-12 col-sm-6 text-center">
+					<!-- This displays the full logo, even on smaller screens -->
+					<img src="../img/logo.gif" alt="The full Ready Confetti logo" class="img-responsive center-block" />
+				</section>
+				<!-- end first footer section -->
+
+				<section class="col-xs-12 col-sm-6">
+					<ul class="col-sm-6 nav-stacked">
+						<h4>Our Services</h4>
+						<li>
+							<a href="services.html#legal">Legal</a>
+						</li>
+						<li><a href="services.html#budget">Budgets</a></li>
+						<li>
+							<a href="services.html#guest-list">Guest List</a>
+						</li>
+						<li>
+							<a href="services.html#photographers">Photography</a>
+						</li>
+						<li>
+							<a href="services.html#venue">Venues</a>
+						</li>
+					</ul>
+				</section>
+				<!-- end first nav footer section -->
+
+				<section class="col-xs-12">
+					<!-- hr element takes width from parent container -->
+					<hr>
+					<!-- Flow content, such as text and time element is permitted within address element as per MDN -->
+					<address>
+					  	&#8220;Ready Confetti&#8221; website created by
+					  	<a href="mailto:john.jordan@digitalskillsacademy.me">John Smith</a>
+					  	in <time datetime="2017-06">June 2017</time>. © copyright 2017 John Jordan.
+					</address>
+
+				</section>
+				<!-- end address footer section -->
+			</footer> <!-- end of footer row -->
+		</div><!-- end of container div -->
+
+		<!-- Load jQuery and Javascript files that Bootstrap requires -->
+		<!-- jQuery loaded first, as Bootstrap JS file depends on it -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script>
+			// This code displays an alert to user when they have successfully submitted the contact form
+			$(function(){
+				// Grab my sign-up-form by id ans wait for 'submit' to happen
+				$('#contact-form').on('click', function(){
+					alert('Thank you for trying to contact \u201CReady Confetti\u201D.\n'
+						+'(I hope it was a compliment you were paying us!)\n'
+						+ 'Unfortunately, this is just a test website, so you can not actually contact us.\n'
+						+ "Your details haven't gone anywhere, so there is no need to worry.\n"
+						+ "Thanks again and I hope you liked the website!" );
+				});
+
+			});
+		</script>
+	</body>
+</html>

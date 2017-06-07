@@ -1,0 +1,742 @@
+
+/* Custom CSS */
+
+
+@font-face{
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'source_serif_pro';
+    src: url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.eot');
+    src: url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.svg#source_serif_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'source_serif_pro';
+    src: url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.eot');
+    src: url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.woff') format('woff'),
+         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.svg#source_serif_probold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Included link to CDN in head of HTML document, but including here to ensure icons display if CDN is down or user viewing
+site off-line etc.*/
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.constrained {
+    max-width: 100%;
+}
+
+body {
+    /*Create a fall-back where the typeface is loaded from the font folder, then through Google Fonts, then final fallback to generic
+    sans-serif tyepface*/
+    font-family: 'source_sans_pro', 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    color: black;
+    /*Sets line-height */
+    line-height: `150%;
+    background-color: #F6F6F6;
+    /*The fixed navbar will overlay your other content, unless you add padding to the top of the <body>.
+    Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.*/
+    padding-top: 70px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+section {
+    /*Initially added this spacing between rows to allow design to breathe, but after "navbar/anchor" point
+    issue encountered, I increased this margin to 60 pixels to contain images within their sections (the
+    negative margin-top of 60 pixels on the anchor-point class was "pulling" the image of the previous
+    section of its parent container */
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+.row .navbar-fixed-top {
+    margin-bottom: 10px;
+}
+
+header {
+    /*Need this to position the overlay div on small screens*/
+    /*position: relative;*/
+    min-height: 100px;
+    margin-top: 10px;
+    /*This margin applied for same reason as to be margin-bottom applied to sections above*/
+    margin-bottom: 60px;
+    /*This positioning is for FAB trigger element to be positoned at bottom of header, rather than the top, which it was for some reason, which
+    I couldn't figure out*/
+    position: relative;
+}
+
+.header-cover {
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+10,ffffff+90,ffffff+100&0+0,1+10,1+90,0+100 */
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 1%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+div.overlay {
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+10,ffffff+90,ffffff+100&0+0,1+10,1+90,0+100 */
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 1%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+header h1 {
+    margin-top: 40px;
+    font-family: 'source_serif_pro';
+    font-weight: bold;
+}
+
+.button-wrapper {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*Next two declarations alter style of Sign-Up Button on hover */
+.sign-up-button {
+    /*White text on Hot Pink background*/
+    background:#FF1493;
+    color: #FFFFFF;
+}
+
+.sign-up-button:hover {
+    /*Hot Pink text on white background*/
+    background:#FFFFFF;
+    color: #FF1493;
+}
+
+/*Start Navigation styles*/
+
+.navbar {
+    background: white;
+}
+
+.navbar-fixed-top {
+    /*This declaration no longer needed as .row class has margin-bottom of 20px above*/
+    margin-bottom: 20px;
+
+}
+
+/* The next two classes ensure that brand images in the nav bar are contained within the navbar itself */
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    max-height: 100%;
+}
+
+/*This declaration allows the navbar brand to expand to allow logo to be displayed at full height*/
+.navbar-brand {
+    height: 100%;
+
+}
+
+/*These next two declarations add some margin to the nav list and hamburger elements
+to make better use of the empty space created by full height logo (contained within navbar-brand)*/
+
+ul.navbar-nav {
+    margin-top: 10px;
+}
+
+button.navbar-toggle {
+    margin-top: 20px;
+}
+
+/*To adjust padding on right of inner navbar container*/
+.navbar > .container {
+    padding-right: 0px;
+}
+
+/* This is a hack to over-come the fact that using the class 'navbar-fixed-top' results
+in navbar-right contents being too close to the edge. This is a recognised issued
+with the Bootstrap 3 framework (https://github.com/twbs/bootstrap/issues/18362) */
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+#hamburger {
+    margin-left: 10px;
+}
+
+#collapse {
+    margin-left: 1px;
+    /*padding-right: 100px;*/
+}
+
+
+/*overwrite default Bootstrap styling for nav elements*/
+
+.navbar .nav > li > a {
+    font-family: 'source_sans_pro', 'Source Sans Pro', sans-serif;
+    color: #000000;
+}
+
+/*Next two declarations alter style of ALL navigation links including the ACTIVE link*/
+.navbar .nav > li > a {
+    /*White text on Hot Pink background*/
+    background: #FFFFFF;
+    color: #000000;
+}
+
+/*These next two declarations apply the confetti animation on hover, while keeping the text
+in a neutral positon*/
+.navbar .nav > li:hover {
+    animation-name: active-hover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.navbar .nav > li:hover a {
+    animation-name: prevent-skew;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*These next two declarations PREVENT the confetti animation on hover on the active nav link,
+by exploiting 'last rule' CSS specificity*/
+
+.navbar .nav > li.active:hover {
+    animation-name: none;
+    /*animation-duration: 3s;
+    animation-iteration-count: infinite;*/
+}
+
+.navbar .nav > li.active:hover a {
+    animation-name: none;
+   /* animation-duration: 3s;
+    animation-iteration-count: infinite;*/
+}
+
+/*Next two declarations alter style ONLY to the ACTIVE navigation link and take precedence since
+they are applied later */
+.navbar .nav > .active > a {
+    /*White text on Hot Pink background*/
+    background:#FF1493;
+    color: #FFFFFF;
+}
+
+.navbar .nav > .active > a:hover {
+    /*Hot Pink text on white background*/
+    background:#FFFFFF;
+    color: #FF1493;
+}
+
+/*Start of animations*/
+
+/*This animation alters the background of NON-ACTIVE navigation links when the user hovers over them, by
+creating skew that mimics a piece of confetti by turning the background into a parellogram.*/
+@keyframes active-hover {
+    0% {
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg);
+        background-color: #92E492;
+    }
+
+    33% {
+        -moz-transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -o-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+        transform: skewX(20deg);
+        background-color: #AB8CDE;
+    }
+
+    49% {
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg);
+        background-color: #92E492;
+
+    }
+
+    66% {
+        -moz-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        background-color: #9FD8EF;
+    }
+
+    100% {
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg);
+        background-color: #92E492;
+    }
+}
+
+/*This animation reverses the skew effect of the 'active-hover' animation on the child node to maintain neutral angle of text*/
+@keyframes prevent-skew {
+    0% {
+    -moz-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    -o-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    }
+
+    33% {
+        -moz-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+
+    49% {
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg);
+
+
+    }
+
+    66% {
+        -moz-transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -o-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+        transform: skewX(20deg);
+    }
+
+    100% {
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg);
+
+    }
+}
+
+/*End of animations*/
+
+
+
+/*END Navigation Styles*/
+
+/*If the navbar's position is fixed (e.g. > 980px screen width), then jumping to a
+in-page anchor link places the initial content for that anchor under the navbar
+where it is, therefore, hidden from the user. (From: https://github.com/twbs/bootstrap/issues/1768)*/
+
+.anchor-point {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+/*Content Section styles*/
+
+
+.small-section {
+    /*This ensures the sections on an extra small screen have a min-height for proper display*/
+    min-height: 240px;
+    /*For proper positioning of caption element, which is absolutely positioned*/
+    position: relative;
+}
+
+/*This class creates a div that floats over the image that is a sister element within the
+same column class on extra small screens*/
+.caption {
+
+    /*To ensure consistent height rather than let content determine
+    dimensions*/
+    /*vertical-align: middle;
+    line-height: normal;*/
+    min-height: 50px;
+    position: absolute;
+    bottom: .3rem;
+    padding-top: 5px;
+    /*Fallback in case browser doesn't support RGBa*/
+    background-color: rgb(150,150,150,);
+    background-color: rgba(150,150,150,0.75);
+    /*background-color: rgba(0, 108, 178, 0.75);
+    color: #FFFFFF;*/
+}
+
+.img-responsive {
+    /*To ensure these images take up full height of their parent containers*/
+    height: 100%;
+}
+
+
+/*Accordion menu styles*/
+.panel-heading h3::after {
+    /* Want a white 'minus' symbol for "closed" panels */
+    font-family: 'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content: "\2212";
+    float: right;
+    color: #000000;
+}
+
+.panel-heading.collapsed h3::after {
+    /* Want a blue 'plus' symbol for "closed" panels, which have "collapsed" Bootstrap class applied */
+    content: "\2b";
+    color: #000000;
+}
+/*End of accordion menu styles*/
+
+/*End of Section styles*/
+
+/*Carousel styles*/
+
+/*Changes position of parent wrapper, to ensure absolute position of
+child indicators is relative to the carousel wrapper, not the
+viewport*/
+#carousel-example {
+
+    /*min-height: 300px;*/
+
+}
+
+.carousel-inner {
+
+}
+
+div.item > img, div.item.active > img {
+    /*Needed to set height on responsive images to display correctly*/
+    height: 100%
+}
+
+
+.my-carousel-indicators {
+    /*To keep carousel indicators over to the right away from header*/
+    margin-left: 25%;
+    width: 100px;
+
+}
+.carousel-indicators li{
+
+
+}
+
+.carousel-indicators .active {
+ /*Slightly increases size of active indicator*/
+ width: 12px;
+ height: 12px;
+ /*Hot Pink colour when active*/
+ background-color: #FF1493;
+}
+
+/*Start of Form elements*/
+
+.form-wrapper {
+    /*To set the margin on this wrapper div without altering default Bootstrap horizontal margins*/
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-wrapper {
+    /*These declarations allow styling of submit button as applying styles
+    directly to button element wasn't working for some reason*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Next two declarations alter style of SUBMIT Button on hover */
+.submit-button:hover {
+    /*White text on Hot Pink background*/
+    background:#FF1493;
+    color: #FFFFFF;
+}
+
+.submit-button {
+    /*Hot Pink text on white background*/
+    background:#FFFFFF;
+    color: #FF1493;
+}
+
+/*End of Form Elements*/
+
+
+
+/*Start of Footer styles*/
+
+footer{
+    /*As per typographic scale, next font size down is 12 pixels*/
+    font-size: 12px;
+    /*To make text legible across light gray background*/
+    color: black;
+    /*background: url('http://placehold.it/720x240') no-repeat ;*/
+    background-color: #DDDDDD ;
+    /*Image always covers footer, regardless of Footer size. Various browser-specific prefixes provided
+    to provide support old browsers*/
+    /*-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;*/
+    /*background-color: black;*/
+}
+
+footer > section {
+    /*Removes white background of section elements applied for the content sections above*/
+    background-color: transparent;
+    /*Remove margin that is needed within body of website for reasons outlined*/
+    margin-bottom: 20px;
+}
+
+footer.row {
+    /*To remove margin-bottom from footer element, for obvious reasons*/
+    margin-bottom: 0px
+}
+
+footer a {
+    /*Change default behaviour of a elements on hover*/
+    color: black;
+}
+
+footer a:hover {
+    /*Change default behaviour of a elements on hover*/
+    color: black;
+}
+
+footer li {
+    /*On extra small screens bullet points were appearing on the nav list*/
+    list-style-type: none;
+}
+
+hr {
+    background-color: black;
+}
+
+/*End of Footer styles*/
+
+/*Start of Floating Action Button Styles*/
+
+/*This animation inccrease the FAB from nothing to full size.*/
+@keyframes trans {
+    from {
+        transform: scale(0,0);
+    }
+
+    to {
+        transform: scale(1,1);
+    }
+}
+
+/*This animation reduces the FAB from full size to nothing.*/
+@keyframes vanish {
+    from {
+        -moz-transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+
+    to {
+        -moz-transform: scale(0,0);
+        -webkit-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+/*This class makes the FAB appear when applied to the element*/
+
+.appear {
+    animation-name: trans;
+    animation-duration: 2s;
+    /*If you want animation to stop at end-point rather than return to starting keyframe*/
+    animation-fill-mode: forwards;
+}
+
+/*This class makes the FAB disappear when applied to the element*/
+.disappear {
+    animation-name: vanish;
+    animation-duration: 2s;
+    /*If you want animation to stop at end-point rather than return to starting keyframe*/
+    animation-fill-mode: forwards;
+}
+
+#fab {
+
+    background-color: #FF1493;
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    /*This sets the FAB at fixed location on the viewport.*/
+    position: fixed;
+    /*left:-150px;*/
+    bottom: 45px;
+    right: 20px;
+    /*Had issues with FAB displaying on page load, when trigger still visible.
+    This is a hack designed to avoid this behaviour. Will be revealed by jQuery at appropriate trigger point.*/
+    display: none;
+    /*text-align: left;*/
+    -moz-transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+}
+
+#fab > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    /*in order to center horizontally*/
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+    /*In order to center vertically*/
+    position: absolute;
+    top: 50%;
+    /*Negative margin set at half-height of child span element*/
+    margin-top: -28px;
+}
+
+#fab-trigger {
+    position: absolute;
+    bottom: 0px;
+}
+/*End of Floating Action Button Styles*/
+
+/*This media query is specific to small screens, altering the min-height*/
+
+@media screen and (max-width: 768px){
+    .caption {
+        /*Caption div was taking up too much space without the p element below it (which
+        was removed on extra small spaces)*/
+        /*min-height: 50px;*/
+        max-height: 100%;
+    }
+
+    label {
+        white-space: normal !important;
+        word-wrap: break-word;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+
+    li > a {
+        min-width: 100%;
+        white-space: normal !important;
+        word-wrap: break-word;
+    }
+
+}
+
+@media screen and (max-width: 229px){
+
+    header {
+        /*Gives additonal margin to top of header as navbar-fixed expands over it when the hamburger
+        menu wraps onto a new line when the screen size is compressed*/
+        margin-top: 50px;
+    }
+
+    /*Attempt to prevent content from spilling out from parent div
+    and causing whitespace on right hand side of design on small screens*/
+    h1, h2, h3, h4, p, label, .btn {
+        max-width: 100%;
+        white-space: normal !important;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 100px) {
+
+
+
+   /* .btn {
+        white-space: normal !important;
+        word-wrap: break-word;
+        max-width: 100%;
+    }*/
+
+    #hamburger {
+        /*Needed to remove margins and set maximum width of hamburger for proper layout*/
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 100%;
+    }
+
+    .icon-bar {
+        /*Adjustments needed to avoid icon-bars exceeding parent container*/
+        max-width: 150%;
+        margin-left: 0px;
+    }
+
+    .container {
+        /*Removed padding on left of parent container that was shifting logo to the right*/
+        padding-left: 0px;
+    }
+
+}
+
+/*This was helpful in debugging white-space that was appearing on the right of my design*/
+
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
