@@ -1,553 +1,706 @@
 <!DOCTYPE html>
+
 <html lang="en">
-	<head>
-		<title>Ready Confetti: Services</title>
-		<meta charset="utf-8">
-		<!-- Set viewport -->
-		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<!-- Webpage author -->
-		<meta content="John Jordan" name="author">
-		<!-- Description of page -->
-		<meta content="This page is about the services that Ready Confetti can offer its users." name="description">
-		<!-- Link to Source Sans Pro in regular and bold weights from Google Fonts -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-		<!-- Link to Source Serif Pro in regular and bold weights from Google Fonts -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700">
-		<!-- Link to minified Bootstrap style sheet -->
-		<link href="../css/bootstrap.min.css" rel="stylesheet"></link>
-		<!-- Own style sheet link -->
-		<link href="../css/custom.css" rel="stylesheet">
-		<!-- Website logo -->
-		<link href="" rel="icon" type="">
-		<!-- Link to CDN to download Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE9]>
-	        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha384-qFIkRsVO/J5orlMvxK1sgAt2FXT67og+NyFTITYzvbIP1IJavVEKZM7YWczXkwpB" crossorigin="anonymous"></script>
+<head>
+	<title>Ready Confetti: Services</title>
+	<meta charset="utf-8"><!-- Set viewport -->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- Webpage author -->
+	<meta content="John Jordan" name="author"><!-- Description of page -->
+	<meta content="This page is about the services that Ready Confetti can offer its users." name="description"><!-- Link to Source Sans Pro in regular and bold weights from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"><!-- Link to Source Serif Pro in regular and bold weights from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet"><!-- Link to minified Bootstrap style sheet -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet"><!-- Own style sheet link -->
+	<link href="../css/custom.css" rel="stylesheet"><!-- Website logo -->
+	<link href="../img/logomark.png" rel="icon" type="img/png"><!-- Link to CDN to download Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha384-qFIkRsVO/J5orlMvxK1sgAt2FXT67og+NyFTITYzvbIP1IJavVEKZM7YWczXkwpB" crossorigin="anonymous"></script>
 
-	        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-	    <![endif]-->
-	    <style>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+        <![endif]-->
+</head>
 
-		    * {
-		    	border: 1px solid black !important;
-		    }
+<body>
+	<div class="container">
+		<!-- This row contains the navigation bar, which is fixed to the top of the viewport -->
+		<!-- The navbar and navbar-default classes are applied to the parent nav element and expand across all the entire length of the screen, regardless of its width. Applied a class of "row" to the nav element for proper padding and alignment as direct descendent of container div -->
 
-	    </style>
-	</head>
-	<body>
-		<div class="container">
-			<!-- This row contains the navigation bar, which is fixed to the top of the viewport -->
-			<!-- The navbar and navbar-default classes are applied to the parent nav element and expand across all the entire length of the screen, regardless of its width. Applied a class of "row" to the nav element for proper padding and alignment as direct descendent of container div -->
-            <nav class="navbar navbar-default navbar-fixed-top row" role="navigation">
-            	<!-- The next wrapper div with class "container" is needed to center navbar contents
-            	on very large screens (greater than 1168px) and keep them inline with rest of design content-->
-            	<div class="container">
-	            	<!-- This anchor tag contains the logomark on its own, for display on small screens -->
-	            	<a href="../index.html"  class="navbar-brand visible-xs">
-	            		<img id="small-logo" src="../img/logomark.gif" alt="The logo mark only of the Ready Confetti site" class="img-responsive visible-xs" />
-	            	</a>
-	            	<!-- This anchor tag contains the full brand logo for larger screens -->
-	            	<a href="../index.html" class="navbar-brand hidden-xs col-sm-6">
-	            		<img src="../img/logo.gif" alt="The full Ready Confetti logo" class="img-responsive" />
-	            	</a>
-	            	<!-- Hamburger menu element that is present from xs to md columns -->
-	            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse" id="hamburger">
-	            		<span class="icon-bar"></span>
-	            		<span class="icon-bar"></span>
-	            		<span class="icon-bar"></span>
-	            	</button> <!-- end of hamburger menu -->
-	            	<!-- Start of div wrapper for hamburger collapsable menu for smaller screens -->
-	            	<!-- This wrapper div given an id that matches the data-target of the data-toggle button -->
-	            	<!-- This div takes up the entire row when the hamburger menu is opened, through use of col-xs-12
-	            	but on larger screens the 'navbar-right' class keeps the nav menu items aligned right as desired -->
-					<div class="col-xs-12 collapse navbar-collapse navbar-right" id="collapse">
-						<!-- The nav and navbar-nav classes are applied to the child nav list element. Reapplied the col-xs-12 class
-							to ensure appropriate display, as without this class, the collapsable nav menu was being clipped -->
-		                <ul class="nav navbar-nav col-xs-12">
-		                    <li>
-		                    	<a href="../index.html">Home</a>
-		                    </li>
-		                    <li class="active">
-		                    	<a href="#">Services</a>
-		                    </li>
-		                    <li >
-		                    	<a href="aboutus.html">About Us</a>
-		                    </li>
 
-		                    <li>
-		                    	<a href="contact.html">Contact</a>
-		                    </li>
-		                </ul> <!-- end of ul that contains the nav menu items -->
-	                </div><!-- end of wrapper div for hamburger menu -->
-	            <div><!-- end of inner container div -->
-            </nav> <!-- end nav row -->
+		<nav class="navbar navbar-default navbar-fixed-top row">
+			<!-- The next wrapper div with class "container" is needed to center navbar contents
+                on very large screens (greater than 1168px) and keep them inline with rest of design content-->
 
-			<header class="row">
-				<!-- These next few elements have been given a class of col-xs-12, even though, as block level
-				elements, they take up the full width of the parent container. However, I wanted consistent
-				padding, so made columns of all child elements of a row, as per Bootstrap documentation -->
-				<!-- This header content takes up the full width on extra small screens, but only half-width on larger screens -->
-				<div class="header-cover col-xs-12 col-sm-6">
-						<h1 class="col-xs-12">Our Services</h1>
-						<p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ea labore, doloremque eaque veritatis consectetur distinctio ipsam, perferendis cum expedita assumenda minus!
-						</p>
-						<p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ea labore, doloremque eaque veritatis consectetur distinctio ipsam, perferendis cum expedita assumenda minus!
-						</p>
-						<!-- Needed to include col-xs-12 class on nav wrapper div to prevent layout break on extra small
-						screens when user hovered on nav element -->
-						<div class="hidden-sm col-xs-12">
-							<ul class="nav nav-pills nav-justified">
-								<!-- This empty li element is here to ensure appropriate spacing of child list elements, as for some
-								reason the first list child had less margin applied to it. I didn't have time to figure it out,
-								so I used this empty li element to hack together a solution that displayed appropriately.  -->
-								<li></li>
-								<li>
-									<a href="#legal">Legal</a>
-								</li>
-								<li>
-									<a href="#budget">Budgets</a>
-								</li>
-								<li>
-									<a href="#guest-list">Guest List</a>
-								</li>
-								<!-- Again, layout of nav menu was broken across medium screens, so adopted a seperate layout
-								for it -->
-								<li class="hidden-md">
-									<a href="#photographers">Photography</a>
-								</li>
-								<li class="hidden-md">
-									<a href="#venue">Venues</a>
-								</li>
-								<!-- Start of wrapper div for medium screen within-page navigation menu -->
-								<div class="visible-md nav nav-pills nav-justified">
-									<li class="col-md-6">
-									<a href="#photographers">Photography</a>
-									</li>
-									<li class="col-md-6">
-										<a href="#venue">Venues</a>
-									</li>
-								</div><!-- end of wrapper div for medium screen within-page navigation menu -->
-							</ul>
-							<!-- Layout was broken on small screens with "Venue" item exceeding parent container
-							despite various techniques to fix. Created a new layout for small screens only -->
-						</div>
-				</div>
-				<!-- end of header content wrapper div -->
-				<!-- The carousel only appears from small screens onwards as the design begins to look
-				broken on smaller screen sizes -->
-				<!-- start of carousel -->
-				<!-- Need a wrapper div with relevant classes and a data-ride attribute that speaks to JavaScript -->
-				<div id="carousel-example" class="carousel slide hidden-xs col-sm-6" data-ride="carousel">
-					<!-- Start of indicators for carousel -->
-					<ol class="carousel-indicators col-md-3 col-md-offset-9">
-						<!-- Data-target refers to parent wrapper div. Note that JavaScript is zero-indexed -->
-						<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example" data-slide-to="1"></li>
-						<li data-target="#carousel-example" data-slide-to="2"></li>
-						<li data-target="#carousel-example" data-slide-to="3"></li>
-						<li data-target="#carousel-example" data-slide-to="4"></li>
-					</ol>
-					<!-- End of indicators for carousel -->
 
-					<!-- Start of inner wrapper for carousel slides -->
-					<div class="carousel-inner">
-						<!-- Each of these images is contained within an a element that will take the user to the
-						respective sub-section of the 'Services' page -->
-						<div class="item active">
-							<a href="#legal">
-								<img src="http://placehold.it/500x300" alt="Image of Legal Documents" class="img-responsive center-block" />
-							</a>
-						</div> <!-- end of carousel item -->
-						<div class="item">
-							<a href="#budget">
-								<img src="http://placehold.it/500x300" alt="Image of a budget" class="img-responsive center-block" />
-							</a>
-						</div>
-						<!-- end of carousel item -->
-						<div class="item">
-							<a href="#guest-list">
-								<img src="http://placehold.it/500x300" alt="Image of a wedding guest list" class="img-responsive center-block" />
-							</a>
-						</div>
-						<!-- end of carousel item -->
-						<div class="item">
-							<a href="#photographers">
-								<img src="http://placehold.it/500x300" alt="Image of a photographer" class="img-responsive center-block" />
-							</a>
-						</div>
-						<!-- end of carousel item -->
-						<div class="item">
-							<a href="#venue">
-								<img src="http://placehold.it/500x300" alt="Image of a wedding venue" class="img-responsive center-block" />
-							</a>
-						</div>
-						<!-- end of carousel item -->
-					</div><!-- end of wrappers for slides -->
-				</div>
-				<!-- end of carousel -->
+			<div class="container">
+				<!-- This anchor tag contains the logomark on its own, for display on small screens -->
+				 <a class="navbar-brand visible-xs" href="../index.html"><img alt="The logo mark only of the Ready Confetti site" class="img-responsive visible-xs" id="small-logo" src="../img/logomark.png"></a> <!-- This anchor tag contains the full brand logo for larger screens -->
+				 <a class="navbar-brand hidden-xs col-sm-6" href="../index.html"><img alt="The full Ready Confetti logo" class="img-responsive" src="../img/logo.png"></a> <!-- Hamburger menu element that is present from xs to md columns -->
+				 <button class="navbar-toggle" data-target="#collapse" data-toggle="collapse" id="hamburger" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <!-- end of hamburger menu -->
+				 <!-- Start of div wrapper for hamburger collapsable menu for smaller screens -->
+				 <!-- This wrapper div given an id that matches the data-target of the data-toggle button -->
+				 <!-- This div takes up the entire row when the hamburger menu is opened, through use of col-xs-12
+                    but on larger screens the 'navbar-right' class keeps the nav menu items aligned right as desired -->
 
-				<!-- Layout was broken on small screens with "Venue" item exceeding parent container
-					despite various techniques to fix. Created a new layout for small screens only -->
-					<ul class="col-sm-12 nav nav-pills nav-justified visible-sm">
+
+				<div class="col-xs-12 collapse navbar-collapse navbar-right" id="collapse">
+					<!-- The nav and navbar-nav classes are applied to the child nav list element. Reapplied the col-xs-12 class
+                            to ensure appropriate display, as without this class, the collapsable nav menu was being clipped -->
+
+
+					<ul class="nav navbar-nav col-xs-12">
 						<li>
-							<a href="#legal">Legal</a>
-						</li>
-						<li>
-							<a href="#budget">Budgets</a>
-						</li>
-						<li>
-							<a href="#guest-list">Guest List</a>
+							<a href="../index.html">Home</a>
 						</li>
 
-						<li>
-							<a href="#photographers">Photography</a>
+
+						<li class="active">
+							<a href="#">Services</a>
 						</li>
+
+
 						<li>
-							<a href="#venue">Venue</a>
+							<a href="aboutus.html">About Us</a>
+						</li>
+
+
+						<li>
+							<a href="contact.html">Contact</a>
 						</li>
 					</ul>
-			</header>
-			<!-- end of header row -->
+					<!-- end of ul that contains the nav menu items -->
+				</div>
+				<!-- end of wrapper div for hamburger menu -->
+			</div>
+			<!-- end of inner container div -->
+		</nav>
+		<!-- end nav row -->
 
-			<!-- start of LEGAL section row -->
-			<!-- Needed to add padding/margin solution to this, through custom "anchor-point" class as fixed nav bar
-			obscured section after clicking link -->
-			<section class="row anchor-point" id="legal">
-				<!-- This div contains the content that will only be displayed on extra small screens -->
-				<div class="col-xs-12 visible-xs small-section">
-					<img src="http://placehold.it/720x240" alt="Image of person stressed on xsmall screen" class="img-responsive">
 
-					<h2 class="col-xs-10 caption">Legals Heading</h2>
+		<header class="row">
+			<!-- These next few elements have been given a class of col-xs-12, even though, as block level
+                elements, they take up the full width of the parent container. However, I wanted consistent
+                padding, so made columns of all child elements of a row, as per Bootstrap documentation -->
+			<!-- This header content takes up the full width on extra small screens, but only half-width on larger screens -->
 
-				</div> <!-- end of div for content for extra small screens with absolute positioned caption -->
-				<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
-				extra small screens -->
-				<div class="col-xs-12 visible-xs">
-					<!-- This is the actual div that holds the widget component elements -->
-					<div>
-						<!-- This is the start of the div panel that toggles the collapsable content -->
-						<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
-						<div aria-controls="#legal-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12" data-target="#legal-section-dropdown" data-toggle="collapse" role="region">
-							<!-- This heading gets a pseudo-element added to it within the CSS -->
-							<h3 class="in-panel text-center">Learn more</h3>
-						</div>
-						<!-- End div that acts as control panel for collapsable content -->
 
-						<!-- Start of div that houses actual collapsable content	 -->
-						<div class="collapse text-center" id="legal-section-dropdown">
-							<h3>What do I need to get signed & when?</h3>
+			<div class="header-cover col-xs-12 col-sm-6">
+				<h1 class="col-xs-12">Our Services</h1>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
+				<p class="col-xs-12">Ready Confetti provides everything you need to plan your wedding day &#8211; from the legal documents you need to sign, right through to creating a budget.</p>
+				<!-- Needed to include col-xs-12 class on nav wrapper div to prevent layout break on extra small
+                    screens when user hovered on nav element -->
 
-						</div><!-- end of div that houses actual collapsable content -->
+
+				<div class="hidden-sm col-xs-12">
+					<ul class="nav nav-pills nav-justified">
+						<!-- This empty li element is here to ensure appropriate spacing of child list elements, as for some
+                            reason the first list child had less margin applied to it. I didn't have time to figure it out,
+                            so I used this empty li element to hack together a solution that displayed appropriately.  -->
+
+
+						<li>
+						</li>
+
+
+						<li>
+							<a href="#legal-anchor">Legal</a>
+						</li>
+
+
+						<li>
+							<a href="#budget-anchor">Budgets</a>
+						</li>
+
+
+						<li>
+							<a href="#guest-list-anchor">Guests</a>
+						</li>
+						<!-- Again, layout of nav menu was broken across medium screens, so adopted a seperate layout
+                            for it -->
+
+
+						<li class="hidden-md">
+							<a href="#suppliers-anchor">Suppliers</a>
+						</li>
+
+
+						<li class="hidden-md">
+							<a href="#venue-anchor">Venues</a>
+						</li>
+						<!-- Start of wrapper div for medium screen within-page navigation menu -->
+
+
+						<li style="list-style: none; display: inline">
+							<div class="visible-md nav nav-pills nav-justified">
+								<ul>
+									<li class="col-md-6">
+										<a href="#suppliers-anchor">Suppliers</a>
+									</li>
+
+
+									<li class="col-md-6">
+										<a href="#venue-anchor">Venues</a>
+									</li>
+								</ul>
+							</div>
+							<!-- end of wrapper div for medium screen within-page navigation menu -->
+						</li>
+					</ul>
+					<!-- Layout was broken on small screens with "Venue" item exceeding parent container
+                        despite various techniques to fix. Created a new layout for small screens only -->
+				</div>
+			</div>
+			<!-- end of header content wrapper div -->
+			<!-- The carousel only appears from small screens onwards as the design begins to look
+                broken on smaller screen sizes -->
+			<!-- start of carousel -->
+			<!-- Need a wrapper div with relevant classes and a data-ride attribute that speaks to JavaScript -->
+
+
+			<div class="carousel slide hidden-xs col-sm-6" data-ride="carousel" id="carousel-example-services">
+				<!-- Start of indicators for carousel -->
+
+
+				<ol class="carousel-indicators col-md-3 col-md-offset-9">
+					<!-- Data-target refers to parent wrapper div. Note that JavaScript is zero-indexed -->
+
+
+					<li class="active" data-slide-to="0" data-target="#carousel-example-services">
+					</li>
+
+
+					<li data-slide-to="1" data-target="#carousel-example-services">
+					</li>
+
+
+					<li data-slide-to="2" data-target="#carousel-example-services">
+					</li>
+
+
+					<li data-slide-to="3" data-target="#carousel-example-services">
+					</li>
+
+
+					<li data-slide-to="4" data-target="#carousel-example-services">
+					</li>
+				</ol>
+				<!-- End of indicators for carousel -->
+				<!-- Start of inner wrapper for carousel slides -->
+
+
+				<div class="carousel-inner">
+					<!-- Each of these images is contained within an a element that will take the user to the
+                        respective sub-section of the 'Services' page -->
+
+
+					<div class="item active">
+						<a href="#legal-anchor"><img alt="Image of Bible and pair of rings" class="img-responsive center-block" src="../img/legal-500x300.jpg"></a>
 					</div>
-					<!-- end div that is direct parent of widget component elements -->
-				</div>
-				<!-- end of row div housing entire widget -->
+					<!-- end of carousel item -->
 
-				<!-- Wrapper div for LEFT-hand side content of section on all but x-small screens -->
-				<div class="col-sm-6 hidden-xs">
-					<h2 class="col-sm-12">Legal Heading</h2>
-					<p class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil veritatis odit modi cupiditate debitis labore deleniti obcaecati voluptates cum quo fugiat illo, commodi temporibus harum velit, a optio eum!</p>
-					<p class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil veritatis odit modi cupiditate debitis labore deleniti obcaecati voluptates cum quo fugiat illo, commodi temporibus harum velit, a optio eum!</p>
-				</div>
-				<!--  end of wrapper div for left hand side content of section -->
-				<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
-				<div class="col-sm-6 visible-sm visible-md visible-lg">
-					<!-- Class of center-block applied to this image to center inside parent element -->
-					<img src="http://placehold.it/500x300" alt="Image of a legal document" class="img-responsive center-block">
-				</div>
-				<!-- end of wrapper for LEFT-hand side content of section -->
 
-			</section><!-- end of LEGAL section row -->
-
-			<!-- start of BUDGET section row -->
-			<section class="row anchor-point" id="budget">
-				<!-- This div contains the content that will only be displayed on extra small screens -->
-				<div class="col-xs-12 visible-xs small-section">
-					<img src="http://placehold.it/720x240" alt="Image of Ready Confetti website on a screen" class="img-responsive">
-
-					<h2 class="col-xs-10 caption">Make a wedding budget</h2>
-
-				</div> <!-- end of div for content for extra small screens with absolute positioned caption -->
-				<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
-				extra small screens -->
-				<div class="col-xs-12 visible-xs">
-					<!-- This is the actual div that holds the widget component elements -->
-					<div>
-						<!-- This is the start of the div panel that toggles the collapsable content -->
-						<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
-						<div aria-controls="#budget-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12" data-target="#budget-section-dropdown" data-toggle="collapse" role="region">
-							<!-- This heading gets a pseudo-element added to it within the CSS -->
-							<h3 class="in-panel text-center">Learn more</h3>
-						</div>
-						<!-- End div that acts as control panel for collapsable content -->
-
-						<!-- Start of div that houses actual collapsable content	 -->
-						<div class="collapse text-center" id="budget-section-dropdown">
-							<h3>Budgeting Made Easy</h3>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-						</div><!-- end of div that houses actual collapsable content -->
+					<div class="item">
+						<a href="#budget-anchor"><img alt="Image of a piggy-bank teddy" class="img-responsive center-block" src="../img/budget-500x300.jpg"></a>
 					</div>
-					<!-- end div that is direct parent of widget component elements -->
-				</div>
-				<!-- end of row div housing entire widget -->
+					<!-- end of carousel item -->
 
-				<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
-				<div class="col-sm-6 visible-sm visible-md visible-lg">
-					<!-- Class of center-block applied to this image to center inside parent element -->
-					<img src="http://placehold.it/500x300" alt="Image of a person happily organising an event" class="img-responsive center-block">
-				</div>
-				<!-- end of wrapper for LEFT-hand side content of section -->
 
-				<!-- Wrapper div for RIGHT-hand side content of section on all but x-small screens -->
-				<div class="col-sm-6 hidden-xs">
-					<h2>Make a wedding budget</h2>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-				</div>
-				<!--  end of wrapper div for RIGHT hand side content of section -->
-
-			</section><!-- end of BUDGET section row -->
-
-			<!-- start of GUEST-LIST section row -->
-			<section class="row anchor-point" id="guest-list">
-				<!-- This div contains the content that will only be displayed on extra small screens -->
-				<div class="col-xs-12 visible-xs small-section">
-					<img src="http://placehold.it/720x240" alt="Image of person stressed on xsmall screen" class="img-responsive">
-
-					<h2 class="col-xs-10 caption">Guest Lists</h2>
-
-				</div> <!-- end of div for content for extra small screens with absolute positioned caption -->
-				<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
-				extra small screens -->
-				<div class="col-xs-12 visible-xs">
-					<!-- This is the actual div that holds the widget component elements -->
-					<div>
-						<!-- This is the start of the div panel that toggles the collapsable content -->
-						<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
-						<div aria-controls="#benefits-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12" data-target="#benefits-section-dropdown" data-toggle="collapse" role="region">
-							<!-- This heading gets a pseudo-element added to it within the CSS -->
-							<h3 class="in-panel text-center">Learn more</h3>
-						</div>
-						<!-- End div that acts as control panel for collapsable content -->
-
-						<!-- Start of div that houses actual collapsable content	 -->
-						<div class="collapse text-center" id="benefits-section-dropdown">
-							<h3>Making a Guest List</h3>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-						</div><!-- end of div that houses actual collapsable content -->
+					<div class="item">
+						<a href="#guest-list-anchor"><img alt="Image of a few empty wedding chairs" class="img-responsive center-block" src="../img/guests-500x300.jpg"></a>
 					</div>
-					<!-- end div that is direct parent of widget component elements -->
+					<!-- end of carousel item -->
+
+
+					<div class="item">
+						<a href="#suppliers-anchor"><img alt="Image of a wedding table" class="img-responsive center-block" src="../img/suppliers-500x300.jpg"></a>
+					</div>
+					<!-- end of carousel item -->
+
+
+					<div class="item">
+						<a href="#venue-anchor"><img alt="Image of a wedding venue" class="img-responsive center-block" src="../img/venue-500x300.jpg"></a>
+					</div>
+					<!-- end of carousel item -->
 				</div>
-				<!-- end of row div housing entire widget -->
+				<!-- end of wrappers for slides -->
+			</div>
+			<!-- end of carousel -->
+			<!-- Layout was broken on small screens with "Venue" item exceeding parent container
+                    despite various techniques to fix. Created a new layout for small screens only -->
 
-				<!-- Wrapper div for LEFT-hand side content of section on all but x-small screens -->
-				<div class="col-sm-6 hidden-xs">
-					<h2 class="col-sm-12">Guest Lists</h2>
 
-					<p class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil veritatis odit modi cupiditate debitis labore deleniti obcaecati voluptates cum quo fugiat illo, commodi temporibus harum velit, a optio eum!</p>
+			<ul class="col-sm-12 nav nav-pills nav-justified visible-sm">
+				<li>
+					<a href="#legal-anchor">Legal</a>
+				</li>
 
-					<p class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil veritatis odit modi cupiditate debitis labore deleniti obcaecati voluptates cum quo fugiat illo, commodi temporibus harum velit, a optio eum!</p>
-				</div><!--  end of wrapper div for left hand side content of section -->
-				<!-- start of wrapper for RIGHT-hand side content of section which is just an image -->
-				<div class="col-sm-6 visible-sm visible-md visible-lg">
-					<!-- Class of center-block applied to this image to center inside parent element -->
-					<img src="http://placehold.it/500x300" alt="Image of the Ready Confetti Website on a desktop and mobile device" class="img-responsive center-block">
+
+				<li>
+					<a href="#budget-anchor">Budgets</a>
+				</li>
+
+
+				<li>
+					<a href="#guest-list-anchor">Guests</a>
+				</li>
+
+
+				<li>
+					<a href="#suppliers-anchor">Suppliers</a>
+				</li>
+
+
+				<li>
+					<a href="#venue-anchor">Venue</a>
+				</li>
+			</ul>
+		</header>
+		<!-- end of header row -->
+		<!-- Start anchor element for legal section -->
+		<a class="anchor" id="legal-anchor"></a> <!-- end of special anchor element for legal section -->
+		 <!-- start of LEGAL section row -->
+
+
+		<section class="row" id="legal">
+			<!-- This div contains the content that will only be displayed on extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs small-section">
+				<img alt="Image of Bible and pair of rings" class="img-responsive center-block" src="../img/legal-720x240.jpg">
+
+				<h2 class="col-xs-10 caption green-confetti">Legals Heading</h2>
+			</div>
+			<!-- end of div for content for extra small screens with absolute positioned caption -->
+			<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
+                extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs">
+				<!-- This is the actual div that holds the widget component elements -->
+
+
+				<div>
+					<!-- This is the start of the div panel that toggles the collapsable content -->
+					<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
+
+
+					<div aria-controls="legal-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12 light-green-confetti" data-target="#legal-section-dropdown" data-toggle="collapse" role="region">
+						<!-- This heading gets a pseudo-element added to it within the CSS -->
+
+
+						<h3 class="in-panel text-center">Learn more</h3>
+					</div>
+					<!-- End div that acts as control panel for collapsable content -->
+					<!-- Start of div that houses actual collapsable content     -->
+
+
+					<div class="collapse text-center" id="legal-section-dropdown">
+						<h3>What do I need to get signed & when?</h3>
+
+
+						<p>While it might not be the most exciting part of a wedding, ensuring all the appropriate legal processes are followed could not be more important.</p>
+
+
+						<p>We provide up-to-date guidance on what legal documentation needs to be prepared, letting you get back to planning the more interesting parts of your wedding.</p>
+					</div>
+					<!-- end of div that houses actual collapsable content -->
 				</div>
-				<!-- end of wrapper for right-hand side content of section -->
+				<!-- end div that is direct parent of widget component elements -->
+			</div>
+			<!-- end of row div housing entire widget -->
+			<!-- Wrapper div for LEFT-hand side content of section on all but x-small screens -->
+
+
+			<div class="col-sm-6 hidden-xs">
+				<h2 class="col-sm-12 green-confetti">Legal Heading</h2>
+
+
+				<p class="col-sm-12">While it might not be the most exciting part of a wedding, ensuring all the appropriate legal processes are followed could not be more important.</p>
+
+
+				<p class="col-sm-12">We provide up-to-date guidance on what legal documentation needs to be prepared, letting you get back to planning the more interesting parts of your wedding.</p>
+			</div>
+			<!--  end of wrapper div for left hand side content of section -->
+			<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
+
+
+			<div class="col-sm-6 visible-sm visible-md visible-lg"><!-- Class of center-block applied to this image to center inside parent element -->
+			<img alt="Image of Bible and pair of rings" class="img-responsive center-block" src="../img/legal-500x300.jpg">
+			</div>
+			<!-- end of wrapper for LEFT-hand side content of section -->
+		</section>
+		<!-- end of LEGAL section row -->
+		<!-- start of BUDGET section row -->
+		<a class="anchor" id="budget-anchor"></a>
+
+		<section class="row" id="budget">
+			<!-- This div contains the content that will only be displayed on extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs small-section">
+				<img alt="Image of piggy bank teddy bear" class="img-responsive" src="../img/budget-720x240.jpg">
+
+				<h2 class="col-xs-10 caption blue-confetti">Make a wedding budget</h2>
+			</div>
+			<!-- end of div for content for extra small screens with absolute positioned caption -->
+			<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
+                extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs">
+				<!-- This is the actual div that holds the widget component elements -->
+
+
+				<div>
+					<!-- This is the start of the div panel that toggles the collapsable content -->
+					<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
+
+
+					<div aria-controls="budget-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12 light-blue-confetti" data-target="#budget-section-dropdown" data-toggle="collapse" role="region">
+						<!-- This heading gets a pseudo-element added to it within the CSS -->
+
+
+						<h3 class="in-panel text-center">Learn more</h3>
+					</div>
+					<!-- End div that acts as control panel for collapsable content -->
+					<!-- Start of div that houses actual collapsable content     -->
+
+
+					<div class="collapse text-center" id="budget-section-dropdown">
+						<h3>Budgeting Made Easy</h3>
+
+
+						<p>Weddings can be expensive and with so much going on, it is all too easy to lose track of what you are spending.</p>
+
+
+						<p>Ready Confetti has an easy-to-use budget planner, which allows you to set a budget and track in real-time what you are spending. You can schedule when payments are due and our planner will create a cash flow that tells you how much money you will need at each stage of your wedding journey.</p>
+					</div>
+					<!-- end of div that houses actual collapsable content -->
+				</div>
+				<!-- end div that is direct parent of widget component elements -->
+			</div>
+			<!-- end of row div housing entire widget -->
+			<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
+
+
+			<div class="col-sm-6 visible-sm visible-md visible-lg"><!-- Class of center-block applied to this image to center inside parent element -->
+			<img alt="Image of a piggy bank teddy bear" class="img-responsive center-block" src="../img/budget-500x300.jpg">
+			</div>
+			<!-- end of wrapper for LEFT-hand side content of section -->
+			<!-- Wrapper div for RIGHT-hand side content of section on all but x-small screens -->
+
+
+			<div class="col-sm-6 hidden-xs">
+				<h2 class="col-sm-12 blue-confetti">Make a wedding budget</h2>
+
+
+				<p class="col-sm-12">Weddings can be expensive and with so much going on, it is all too easy to lose track of what you are spending.</p>
+
+
+				<p class="col-sm-12">Ready Confetti has an easy-to-use budget planner, which allows you to set a budget and track in real-time what you are spending. You can schedule when payments are due and our planner will create a cash flow that tells you how much money you will need at each stage of your wedding journey.</p>
+			</div>
+			<!--  end of wrapper div for RIGHT hand side content of section -->
+		</section>
+		<!-- end of BUDGET section row -->
+		<!-- Start anchor element for guest list section -->
+		<a class="anchor" id="guest-list-anchor"></a> <!-- end of special anchor element for guest list section -->
+		 <!-- start of GUEST-LIST section row -->
+
+
+		<section class="row" id="guest-list">
+			<!-- This div contains the content that will only be displayed on extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs small-section">
+				<img alt="Image of empty wedding chairs" class="img-responsive" src="../img/guests-720x240.jpg">
+
+				<h2 class="col-xs-10 caption purple-confetti">Guest Lists</h2>
+			</div>
+			<!-- end of div for content for extra small screens with absolute positioned caption -->
+			<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
+                extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs">
+				<!-- This is the actual div that holds the widget component elements -->
+
+
+				<div>
+					<!-- This is the start of the div panel that toggles the collapsable content -->
+					<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
+
+
+					<div aria-controls="benefits-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12 light-purple-confetti" data-target="#benefits-section-dropdown" data-toggle="collapse" role="region">
+						<!-- This heading gets a pseudo-element added to it within the CSS -->
+
+
+						<h3 class="in-panel text-center">Learn more</h3>
+					</div>
+					<!-- End div that acts as control panel for collapsable content -->
+					<!-- Start of div that houses actual collapsable content     -->
+
+
+					<div class="collapse text-center" id="benefits-section-dropdown">
+						<h3>Making a Guest List</h3>
+
+
+						<p>Keeping track of all the invites you have sent, who has responded and who has not is yet another wedding planning headache.</p>
+
+
+						<p>Our easy-to-use guest list feature provides an at-a-glance guide to your guest list, letting you know the information you need as well as letting you create custom e-mail invitations.</p>
+					</div>
+					<!-- end of div that houses actual collapsable content -->
+				</div>
+				<!-- end div that is direct parent of widget component elements -->
+			</div>
+			<!-- end of row div housing entire widget -->
+			<!-- Wrapper div for LEFT-hand side content of section on all but x-small screens -->
+
+
+			<div class="col-sm-6 hidden-xs">
+				<h2 class="col-sm-12 blue-confetti">Guest Lists</h2>
+
+
+				<p class="col-sm-12">Keeping track of all the invites you have sent, who has responded and who has not is yet another wedding planning headache.</p>
+
+
+				<p class="col-sm-12">Our easy-to-use guest list feature provides an at-a-glance guide to your guest list, letting you know the information you need as well as letting you create custom e-mail invitations.</p>
+			</div>
+			<!--  end of wrapper div for left hand side content of section -->
+			<!-- start of wrapper for RIGHT-hand side content of section which is just an image -->
+
+
+			<div class="col-sm-6 visible-sm visible-md visible-lg"><!-- Class of center-block applied to this image to center inside parent element -->
+			<img alt="Image of empty wedding chairs" class="img-responsive center-block" src="../img/guests-500x300.jpg">
+			</div>
+			<!-- end of wrapper for right-hand side content of section -->
+		</section>
+		<!-- end of GUEST-LIST section row -->
+		<!-- Start anchor element for SUPPLIERS section -->
+		<a class="anchor" id="suppliers-anchor"></a> <!-- end of special anchor element for SUPPLIERS section -->
+		 <!-- start of SUPPLIERS section row -->
+
+
+		<section class="row" id="suppliers">
+			<!-- This div contains the content that will only be displayed on extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs small-section">
+				<img alt="Image of a edding table" class="img-responsive center-block" src="../img/suppliers-720x240.jpg">
+
+				<h2 class="col-xs-10 caption green-confetti">Find a supplier</h2>
+			</div>
+			<!-- end of div for content for extra small screens with absolute positioned caption -->
+			<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
+                extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs">
+				<!-- This is the actual div that holds the widget component elements -->
+
+
+				<div>
+					<!-- This is the start of the div panel that toggles the collapsable content -->
+					<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
+
+
+					<div aria-controls="photographers-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12 light-green-confetti" data-target="#photographers-section-dropdown" data-toggle="collapse" role="region">
+						<!-- This heading gets a pseudo-element added to it within the CSS -->
+
+
+						<h3 class="in-panel text-center">Learn more</h3>
+					</div>
+					<!-- End div that acts as control panel for collapsable content -->
+					<!-- Start of div that houses actual collapsable content     -->
+
+
+					<div class="collapse text-center" id="photographers-section-dropdown">
+						<h3>From Photographers to Florists</h3>
+
+
+						<p>Our directory of suppliers lists only trusted professionals, so whether you are searching for a celebrant, a florist or a photographer, you know that they will provide the professional service you deserve.</p>
+
+
+						<p>Sign-up today so you can begin searching our directory and see all that Ready Confetti can offer you.</p>
+					</div>
+					<!-- end of div that houses actual collapsable content -->
+				</div>
+				<!-- end div that is direct parent of widget component elements -->
+			</div>
+			<!-- end of row div housing entire widget -->
+			<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
+
+
+			<div class="col-sm-6 visible-sm visible-md visible-lg"><!-- Class of center-block applied to this image to center inside parent element -->
+			<img alt="Image of a edding table" class="img-responsive center-block" src="../img/suppliers-500x300.jpg">
+			</div>
+			<!-- end of wrapper for LEFT-hand side content of section -->
+			<!-- Wrapper div for RIGHT-hand side content of section on all but x-small screens -->
+
+
+			<div class="col-sm-6 hidden-xs">
+				<h2 class="col-sm-12 green-confetti">Find a supplier</h2>
+
+
+				<p class="col-sm-12">Our directory of suppliers lists only trusted professionals, so whether you are searching for a celebrant, a florist or a photographer, you know that they will provide the professional service you deserve.</p>
+
+
+				<p class="col-sm-12">Sign-up today so you can begin searching our directory and see all that Ready Confetti can offer you.</p>
+			</div>
+			<!--  end of wrapper div for RIGHT hand side content of section -->
+		</section>
+		<!-- end of SUPPLIERS section row -->
+		<!-- Start anchor element for venue section -->
+		<a class="anchor" id="venue-anchor"></a> <!-- end of special anchor element for venue section -->
+		 <!-- start of VENUE section row -->
+
+
+		<section class="row" id="venue">
+			<!-- This div contains the content that will only be displayed on extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs small-section">
+				<img alt="Image of a wedding venue" class="img-responsive" src="../img/venue-720x240.jpg">
+
+				<h2 class="col-xs-10 caption blue-confetti">Wedding Venues</h2>
+			</div>
+			<!-- end of div for content for extra small screens with absolute positioned caption -->
+			<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
+                extra small screens -->
+
+
+			<div class="col-xs-12 visible-xs">
+				<!-- This is the actual div that holds the widget component elements -->
+
+
+				<div>
+					<!-- This is the start of the div panel that toggles the collapsable content -->
+					<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
+
+
+					<div aria-controls="venue-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12 light-blue-confetti" data-target="#venue-section-dropdown" data-toggle="collapse" role="region">
+						<!-- This heading gets a pseudo-element added to it within the CSS -->
+
+
+						<h3 class="in-panel text-center">Learn more</h3>
+					</div>
+					<!-- End div that acts as control panel for collapsable content -->
+					<!-- Start of div that houses actual collapsable content     -->
+
+
+					<div class="collapse text-center" id="venue-section-dropdown">
+						<h3>Find a Venue You&#8217;ll Love</h3>
+
+
+						<p>We have several hundred wedding venues in our directory with enough variety that you are sure to find a venue that suit&#8217;s your needs &#8211; from stately homes, idyllic churches and scenic outdoor venues. You can browse our listed venues and book a viewing all through our website.</p>
+
+
+						<p>We continually review our venues to ensure that they are providing the service our users deserve, so you can be confident you&#8217;ll have a perfect day.</p>
+					</div>
+					<!-- end of div that houses actual collapsable content -->
+				</div>
+				<!-- end div that is direct parent of widget component elements -->
+			</div>
+			<!-- end of row div housing entire widget -->
+			<!-- Wrapper div for LEFT-hand side content of section on all but x-small screens -->
+
+
+			<div class="col-sm-6 hidden-xs">
+				<h2 class="col-sm-12 blue-confetti">Wedding Venues</h2>
+
+
+				<p class="col-sm-12">We have several hundred wedding venues in our directory with enough variety that you are sure to find a venue that suit&#8217;s your needs &#8211; from stately homes, idyllic churches and scenic outdoor venues. You can browse our listed venues and book a viewing all through our website.</p>
+
+
+				<p class="col-sm-12">We continually review our venues to ensure that they are providing the service our users deserve, so you can be confident you&#8217;ll have a perfect day.</p>
+			</div>
+			<!--  end of wrapper div for left hand side content of section -->
+			<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
+
+
+			<div class="col-sm-6 visible-sm visible-md visible-lg"><!-- Class of center-block applied to this image to center inside parent element -->
+			<img alt="Image of a wedding venue" class="img-responsive center-block" src="../img/venue-500x300.jpg">
+			</div>
+			<!-- end of wrapper for LEFT-hand side content of section -->
+		</section>
+		<!-- end of VENUE section row -->
+
+
+		<footer class="row">
+			<section class="col-xs-12">
+				<h4>Our Services</h4>
+
+
+				<ul class="col-sm-12 nav-justified text-center">
+					<li>
+						<a href="services.html#legal-anchor">Legal</a>
+					</li>
+
+
+					<li>
+						<a href="services.html#budget-anchor">Budgets</a>
+					</li>
+
+
+					<li>
+						<a href="services.html#guest-list-anchor">Guest List</a>
+					</li>
+
+
+					<li>
+						<a href="services.html#suppliers-anchor">Suppliers</a>
+					</li>
+
+
+					<li>
+						<a href="services.html#venue-anchor">Venues</a>
+					</li>
+				</ul>
 			</section>
-			<!-- end of GUEST-LIST section row -->
+			<!-- end first nav footer section -->
 
-			<!-- start of PHOTOGRAPHERS section row -->
-			<section class="row anchor-point" id="photographers">
-				<!-- This div contains the content that will only be displayed on extra small screens -->
-				<div class="col-xs-12 visible-xs small-section">
-					<img src="http://placehold.it/720x240" alt="Image of a photographer" class="img-responsive center-block">
 
-					<h2 class="col-xs-10 caption">Find a photographer</h2>
+			<section class="col-xs-12 text-center">
+				<h3>Author Information</h3>
+				<!-- hr element takes width from parent container -->
 
-				</div> <!-- end of div for content for extra small screens with absolute positioned caption -->
-				<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
-				extra small screens -->
-				<div class="col-xs-12 visible-xs">
-					<!-- This is the actual div that holds the widget component elements -->
-					<div>
-						<!-- This is the start of the div panel that toggles the collapsable content -->
-						<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
-						<div aria-controls="#photographers-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12" data-target="#photographers-section-dropdown" data-toggle="collapse" role="region">
-							<!-- This heading gets a pseudo-element added to it within the CSS -->
-							<h3 class="in-panel text-center">Learn more</h3>
-						</div>
-						<!-- End div that acts as control panel for collapsable content -->
+				<hr>
+				<!-- Flow content, such as text and time element is permitted within address element as per MDN -->
 
-						<!-- Start of div that houses actual collapsable content	 -->
-						<div class="collapse text-center" id="photographers-section-dropdown">
-							<h3>Load of Photographers to choose from</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
+				<address>
+					&#8220;Ready Confetti&#8221; website created by <a href="mailto:john.jordan@digitalskillsacademy.me">John Jordan</a> in <time datetime="2017-06">June 2017</time>. © copyright 2017 John Jordan.
+				</address>
+			</section>
+			<!-- end address footer section -->
+		</footer>
+		<!-- end of footer row -->
+		<!-- Start of FAB. Wrapper div used to toggle appearance/disppearance of FAB -->
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
 
-						</div><!-- end of div that houses actual collapsable content -->
-					</div>
-					<!-- end div that is direct parent of widget component elements -->
-				</div>
-				<!-- end of row div housing entire widget -->
+		<div class="disappear" id="fab">
+			<!-- Link to special anhor element for sign-up form that ensures content is not clipped -->
+			 <a class="fa fa-pencil-square-o fa-2x" href="../index.html#sign-up-form-anchor"></a>
+		</div>
+		<!-- END of FAB -->
+	</div>
+	<!-- end of container div -->
+	<!-- Load jQuery and Javascript files that Bootstrap requires -->
+	<!-- jQuery loaded first, as Bootstrap JS file depends on it -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="../js/bootstrap.min.js">
+	</script>
+	<script>
+	           // This code triggers the appearance of the floating action button. Unlike index.html script, this script is
+	           // very straight-forward. Basically, the FAB is always visible and the lines of code basically over-write the default
+	           // settings of the FAB
+	           var $fab = $('#fab');
+	           $fab.removeClass('disappear');
+	           $fab.show();
+	           $fab.addClass('appear');
 
-				<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
-				<div class="col-sm-6 visible-sm visible-md visible-lg">
-					<!-- Class of center-block applied to this image to center inside parent element -->
-					<img src="http://placehold.it/500x300" alt="Image of a person happily organising an event" class="img-responsive center-block">
-				</div>
-				<!-- end of wrapper for LEFT-hand side content of section -->
-
-				<!-- Wrapper div for RIGHT-hand side content of section on all but x-small screens -->
-				<div class="col-sm-6 hidden-xs">
-					<h2>Find a photographer</h2>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-				</div>
-				<!--  end of wrapper div for RIGHT hand side content of section -->
-
-			</section><!-- end of PHOTOGRAPHERS section row -->
-
-			<!-- start of VENUE section row -->
-
-			<section class="row anchor-point" id="venue">
-				<!-- This div contains the content that will only be displayed on extra small screens -->
-				<div class="col-xs-12 visible-xs small-section">
-					<img src="http://placehold.it/720x240" alt="Image of a wedding venue" class="img-responsive">
-
-					<h2 class="col-xs-10 caption">Wedding Venues</h2>
-
-				</div> <!-- end of div for content for extra small screens with absolute positioned caption -->
-				<!-- This next div houses a widget that the user can expand to read more information. It is only visible on
-				extra small screens -->
-				<div class="col-xs-12 visible-xs">
-					<!-- This is the actual div that holds the widget component elements -->
-					<div>
-						<!-- This is the start of the div panel that toggles the collapsable content -->
-						<!-- "aria-expanded" attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. Since element is closed by default, it has an initial value of "false" -->
-						<div aria-controls="#venue-section-dropdown" aria-expanded="false" class="panel-heading collapsed col-xs-12" data-target="#venue-section-dropdown" data-toggle="collapse" role="region">
-							<!-- This heading gets a pseudo-element added to it within the CSS -->
-							<h3 class="in-panel text-center">Learn more</h3>
-						</div>
-						<!-- End div that acts as control panel for collapsable content -->
-
-						<!-- Start of div that houses actual collapsable content	 -->
-						<div class="collapse text-center" id="venue-section-dropdown">
-							<h3>Find a Venue You'll Love</h3>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus, consectetur beatae fugit odio iure repudiandae quia distinctio, id ducimus molestiae. Obcaecati, unde. Illo molestiae dolorum, saepe nisi enim iusto.</p>
-
-						</div><!-- end of div that houses actual collapsable content -->
-					</div>
-					<!-- end div that is direct parent of widget component elements -->
-				</div>
-				<!-- end of row div housing entire widget -->
-
-				<!-- Wrapper div for LEFT-hand side content of section on all but x-small screens -->
-				<div class="col-sm-6 hidden-xs">
-					<h2 class="col-sm-12">Wedding Venues</h2>
-					<p class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil veritatis odit modi cupiditate debitis labore deleniti obcaecati voluptates cum quo fugiat illo, commodi temporibus harum velit, a optio eum!</p>
-					<p class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil veritatis odit modi cupiditate debitis labore deleniti obcaecati voluptates cum quo fugiat illo, commodi temporibus harum velit, a optio eum!</p>
-				</div>
-				<!--  end of wrapper div for left hand side content of section -->
-				<!-- start of wrapper for LEFT-hand side content of section which is just an image -->
-				<div class="col-sm-6 visible-sm visible-md visible-lg">
-					<!-- Class of center-block applied to this image to center inside parent element -->
-					<img src="http://placehold.it/500x300" alt="Image of a legal document" class="img-responsive center-block">
-				</div>
-				<!-- end of wrapper for LEFT-hand side content of section -->
-
-			</section><!-- end of VENUE section row -->
-
-			<footer class="row">
-				<!-- Start of test code -->
-				<!-- <h2 id="footer-header" class="col-xs-12">This is the footer</h2>
-				<p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque vel doloremque laborum. Quaerat nulla eum in ullam adipisci veritatis voluptatibus quibusdam doloremque architecto, quae ea impedit voluptates a numquam!</p>
-				<button id="my-slideup-button" class="col-xs-12 btn btn-default ">Click me</button> -->
-				<!-- End of test code -->
-
-				<section class="col-xs-12 col-sm-6 text-center">
-					<!-- This displays the full logo, even on smaller screens -->
-					<img src="../img/logo.gif" alt="The full Ready Confetti logo" class="img-responsive center-block" />
-					<!-- These next few col-sm-4 divs contain social media icons for display only at screens larger than xs -->
-					<!-- <h4 class="hidden-xs">Connect with us</h4>
-					<span class="hidden-xs fa fa-facebook-official fa-2x col-sm-4"></span>
-					<span class="hidden-xs fa fa-twitter-square fa-2x col-sm-4"></span>
-					<span class="hidden-xs fa fa-pinterest-square fa-2x col-sm-4"></span> -->
-				</section>
-				<!-- end first footer section -->
-
-				<!-- On xs screens the social media icons appear before the nav elements and  I used the Boostrap 'visible-' class to achieve this effect -->
-
-				<!-- <section class="visible-xs col-xs-12 text-center">
-					<h4>Connect with us</h4> -->
-					<!-- Social media icons become larger at this small screen size -->
-					<!-- <span class="fa fa-facebook-official fa-3x col-xs-4 dud-icons" id="foo"></span>
-					<span class="fa fa-twitter-square fa-3x col-xs-4 dud-icons"></span>
-					<span class="fa fa-pinterest-square fa-3x col-xs-4 dud-icons"></span>
-				</section> --><!-- end of xs social media icon container -->
-
-				<section class="col-xs-12 col-sm-6">
-					<ul class="col-sm-6 nav-stacked">
-						<h4>Our Services</h4>
-						<li>
-							<a href="#legal">Legal</a>
-						</li>
-						<li><a href="#budget">Budgets</a></li>
-						<li>
-							<a href="#guest-list">Guest List</a>
-						</li>
-						<li>
-							<a href="#photographers">Photography</a>
-						</li>
-						<li>
-							<a href="#venue">Venues</a>
-						</li>
-					</ul>
-				</section>
-				<!-- end first nav footer section -->
-
-				<section class="col-xs-12">
-					<!-- hr element takes width from parent container -->
-					<hr>
-					<!-- Flow content, such as text and time element is permitted within address element as per MDN -->
-					<address>
-					  	&#8220;Ready Confetti&#8221; website created by
-					  	<a href="mailto:john.jordan@digitalskillsacademy.me">John Smith</a>
-					  	in <time datetime="2017-06">June 2017</time>. © copyright 2017 John Jordan.
-					</address>
-
-				</section>
-				<!-- end address footer section -->
-			</footer> <!-- end of footer row -->
-		</div><!-- end of container div -->
-
-		<!-- Load jQuery and Javascript files that Bootstrap requires -->
-		<!-- jQuery loaded first, as Bootstrap JS file depends on it -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
-		<script src="../js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-		</script>
-	</body>
+	</script>
+</body>
 </html>

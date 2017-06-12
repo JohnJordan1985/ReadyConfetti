@@ -1,64 +1,47 @@
-
 /* Custom CSS */
 
-
-@font-face{
+@font-face {
     font-family: 'source_sans_pro';
     src: url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.eot');
-    src: url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff') format('woff'),
-         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    src: url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff2') format('woff2'), url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff') format('woff'), url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.ttf') format('truetype'), url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'source_sans_pro';
     src: url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.eot');
-    src: url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff') format('woff'),
-         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.ttf') format('truetype'),
-         url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    src: url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff2') format('woff2'), url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff') format('woff'), url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.ttf') format('truetype'), url('../fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'source_serif_pro';
     src: url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.eot');
-    src: url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.woff') format('woff'),
-         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.ttf') format('truetype'),
-         url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.svg#source_serif_proregular') format('svg');
+    src: url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.woff2') format('woff2'), url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.woff') format('woff'), url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.ttf') format('truetype'), url('../fonts/sourceserifpro-regular/sourceserifpro-regular-webfont.svg#source_serif_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'source_serif_pro';
     src: url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.eot');
-    src: url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.woff2') format('woff2'),
-         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.woff') format('woff'),
-         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.ttf') format('truetype'),
-         url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.svg#source_serif_probold') format('svg');
+    src: url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.woff2') format('woff2'), url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.woff') format('woff'), url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.ttf') format('truetype'), url('../fonts/sourceserifpro-bold/sourceserifpro-bold-webfont.svg#source_serif_probold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
+
 
 /*Included link to CDN in head of HTML document, but including here to ensure icons display if CDN is down or user viewing
 site off-line etc.*/
 
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .constrained {
@@ -73,23 +56,49 @@ body {
     color: black;
     /*Sets line-height */
     line-height: `150%;
-    background-color: #F6F6F6;
+    /* Gives light grey background colour to body element */
+    background-color: #F5F5F5;
     /*The fixed navbar will overlay your other content, unless you add padding to the top of the <body>.
     Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.*/
     padding-top: 70px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 
 
+/*START Section for drop shadows*/
+
+section, header, .form-wrapper {
+    /*Apply a slight shadow to section and header elements, with shadow on vertical edges lighter than one on base edge*/
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 2px 2px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 2px 2px rgba(0, 0, 0, 0.23);
+}
+
+.navbar-fixed-top {
+    /*Apply a shadow to fixed navbar elements, which is greater than one applied to sections and header element,
+    to indicate its higher elevation*/
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.23);
+}
+
+#fab {
+    /* Apply a shadow to floating action button, which is greater than one applied to all other elements,
+    to indicate its higher elevation */
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+footer>section {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*END section for drop shadows*/
+
 section {
-    /*Initially added this spacing between rows to allow design to breathe, but after "navbar/anchor" point
-    issue encountered, I increased this margin to 60 pixels to contain images within their sections (the
-    negative margin-top of 60 pixels on the anchor-point class was "pulling" the image of the previous
-    section of its parent container */
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     background-color: white;
 }
 
@@ -102,20 +111,22 @@ header {
     /*position: relative;*/
     min-height: 100px;
     margin-top: 10px;
-    /*This margin applied for same reason as to be margin-bottom applied to sections above*/
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     /*This positioning is for FAB trigger element to be positoned at bottom of header, rather than the top, which it was for some reason, which
     I couldn't figure out*/
     position: relative;
 }
 
 .header-cover {
-
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+10,ffffff+90,ffffff+100&0+0,1+10,1+90,0+100 */
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 1%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+    /* IE6-9 */
 }
 
 div.overlay {
@@ -124,10 +135,14 @@ div.overlay {
     background-color: white;
     height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+10,ffffff+90,ffffff+100&0+0,1+10,1+90,0+100 */
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 1%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 1%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+    /* IE6-9 */
 }
 
 header h1 {
@@ -142,20 +157,26 @@ header h1 {
 }
 
 
-
-
 /*Next two declarations alter style of Sign-Up Button on hover */
+
 .sign-up-button {
     /*White text on Hot Pink background*/
-    background:#FF1493;
+    background: #FF1493;
     color: #FFFFFF;
+    /*Introduces a transition effect on hover over this button*/
+    -webkit-transition: background 1s ease-out, color 1s ease-out;
+    -moz-transition: background 1s ease-out, color 1s ease-out;
+    -ms-transition: background 1s ease-out, color 1s ease-out;
+    -o-transition: background 1s ease-out, color 1s ease-out;
+    transition: background 1s ease-out, color 1s ease-out;
 }
 
 .sign-up-button:hover {
     /*Hot Pink text on white background*/
-    background:#FFFFFF;
+    background: #FFFFFF;
     color: #FF1493;
 }
+
 
 /*Start Navigation styles*/
 
@@ -163,11 +184,6 @@ header h1 {
     background: white;
 }
 
-.navbar-fixed-top {
-    /*This declaration no longer needed as .row class has margin-bottom of 20px above*/
-    margin-bottom: 20px;
-
-}
 
 /* The next two classes ensure that brand images in the nav bar are contained within the navbar itself */
 
@@ -180,11 +196,13 @@ header h1 {
     max-height: 100%;
 }
 
+
 /*This declaration allows the navbar brand to expand to allow logo to be displayed at full height*/
+
 .navbar-brand {
     height: 100%;
-
 }
+
 
 /*These next two declarations add some margin to the nav list and hamburger elements
 to make better use of the empty space created by full height logo (contained within navbar-brand)*/
@@ -197,10 +215,13 @@ button.navbar-toggle {
     margin-top: 20px;
 }
 
+
 /*To adjust padding on right of inner navbar container*/
-.navbar > .container {
+
+.navbar>.container {
     padding-right: 0px;
 }
+
 
 /* This is a hack to over-come the fact that using the class 'navbar-fixed-top' results
 in navbar-right contents being too close to the edge. This is a recognised issued
@@ -222,65 +243,101 @@ with the Bootstrap 3 framework (https://github.com/twbs/bootstrap/issues/18362) 
 
 /*overwrite default Bootstrap styling for nav elements*/
 
-.navbar .nav > li > a {
+.navbar .nav>li>a {
     font-family: 'source_sans_pro', 'Source Sans Pro', sans-serif;
     color: #000000;
 }
 
+
 /*Next two declarations alter style of ALL navigation links including the ACTIVE link*/
-.navbar .nav > li > a {
+
+.navbar .nav>li>a {
     /*White text on Hot Pink background*/
     background: #FFFFFF;
     color: #000000;
 }
 
+
 /*These next two declarations apply the confetti animation on hover, while keeping the text
 in a neutral positon*/
-.navbar .nav > li:hover {
+
+.navbar .nav>li:hover {
     animation-name: active-hover;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
-.navbar .nav > li:hover a {
+.navbar .nav>li:hover a {
     animation-name: prevent-skew;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
+
 /*These next two declarations PREVENT the confetti animation on hover on the active nav link,
 by exploiting 'last rule' CSS specificity*/
 
-.navbar .nav > li.active:hover {
+.navbar .nav>li.active:hover {
     animation-name: none;
     /*animation-duration: 3s;
     animation-iteration-count: infinite;*/
 }
 
-.navbar .nav > li.active:hover a {
+.navbar .nav>li.active:hover a {
     animation-name: none;
-   /* animation-duration: 3s;
+    /* animation-duration: 3s;
     animation-iteration-count: infinite;*/
 }
 
+
 /*Next two declarations alter style ONLY to the ACTIVE navigation link and take precedence since
 they are applied later */
-.navbar .nav > .active > a {
+
+.navbar .nav>.active>a {
     /*White text on Hot Pink background*/
-    background:#FF1493;
+    background: #FF1493;
     color: #FFFFFF;
 }
 
-.navbar .nav > .active > a:hover {
+.navbar .nav>.active>a:hover {
     /*Hot Pink text on white background*/
-    background:#FFFFFF;
+    background: #FFFFFF;
     color: #FF1493;
 }
 
+
+/* Overwrite default Bootstrap class for Services page list of nav-pills links*/
+
+.nav-pills>li>a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*These next two declarations apply the confetti animation on hover for the Services page nav-pills links, while keeping the text
+in a neutral positon by applying the 'prevent-skew' to the a element only */
+
+.nav-pills>li:hover {
+    animation-name: active-hover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nav-pills>li:hover a {
+    /*Removes background colour that was obscuring confetti animation*/
+    background: none;
+    animation-name: prevent-skew;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
 /*Start of animations*/
+
 
 /*This animation alters the background of NON-ACTIVE navigation links when the user hovers over them, by
 creating skew that mimics a piece of confetti by turning the background into a parellogram.*/
+
 @keyframes active-hover {
     0% {
         -moz-transform: skewX(0deg);
@@ -290,7 +347,6 @@ creating skew that mimics a piece of confetti by turning the background into a p
         transform: skewX(0deg);
         background-color: #92E492;
     }
-
     33% {
         -moz-transform: skewX(20deg);
         -webkit-transform: skewX(20deg);
@@ -299,7 +355,6 @@ creating skew that mimics a piece of confetti by turning the background into a p
         transform: skewX(20deg);
         background-color: #AB8CDE;
     }
-
     49% {
         -moz-transform: skewX(0deg);
         -webkit-transform: skewX(0deg);
@@ -307,9 +362,7 @@ creating skew that mimics a piece of confetti by turning the background into a p
         -ms-transform: skewX(0deg);
         transform: skewX(0deg);
         background-color: #92E492;
-
     }
-
     66% {
         -moz-transform: skewX(-20deg);
         -webkit-transform: skewX(-20deg);
@@ -318,7 +371,6 @@ creating skew that mimics a piece of confetti by turning the background into a p
         transform: skewX(-20deg);
         background-color: #9FD8EF;
     }
-
     100% {
         -moz-transform: skewX(0deg);
         -webkit-transform: skewX(0deg);
@@ -329,16 +381,17 @@ creating skew that mimics a piece of confetti by turning the background into a p
     }
 }
 
+
 /*This animation reverses the skew effect of the 'active-hover' animation on the child node to maintain neutral angle of text*/
+
 @keyframes prevent-skew {
     0% {
-    -moz-transform: skewX(0deg);
-    -webkit-transform: skewX(0deg);
-    -o-transform: skewX(0deg);
-    -ms-transform: skewX(0deg);
-    transform: skewX(0deg);
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg);
     }
-
     33% {
         -moz-transform: skewX(-20deg);
         -webkit-transform: skewX(-20deg);
@@ -346,17 +399,13 @@ creating skew that mimics a piece of confetti by turning the background into a p
         -ms-transform: skewX(-20deg);
         transform: skewX(-20deg);
     }
-
     49% {
         -moz-transform: skewX(0deg);
         -webkit-transform: skewX(0deg);
         -o-transform: skewX(0deg);
         -ms-transform: skewX(0deg);
         transform: skewX(0deg);
-
-
     }
-
     66% {
         -moz-transform: skewX(20deg);
         -webkit-transform: skewX(20deg);
@@ -364,34 +413,23 @@ creating skew that mimics a piece of confetti by turning the background into a p
         -ms-transform: skewX(20deg);
         transform: skewX(20deg);
     }
-
     100% {
         -moz-transform: skewX(0deg);
         -webkit-transform: skewX(0deg);
         -o-transform: skewX(0deg);
         -ms-transform: skewX(0deg);
         transform: skewX(0deg);
-
     }
 }
+
 
 /*End of animations*/
 
 
-
 /*END Navigation Styles*/
 
-/*If the navbar's position is fixed (e.g. > 980px screen width), then jumping to a
-in-page anchor link places the initial content for that anchor under the navbar
-where it is, therefore, hidden from the user. (From: https://github.com/twbs/bootstrap/issues/1768)*/
-
-.anchor-point {
-    padding-top: 60px;
-    margin-top: -60px;
-}
 
 /*Content Section styles*/
-
 
 .small-section {
     /*This ensures the sections on an extra small screen have a min-height for proper display*/
@@ -400,10 +438,11 @@ where it is, therefore, hidden from the user. (From: https://github.com/twbs/boo
     position: relative;
 }
 
+
 /*This class creates a div that floats over the image that is a sister element within the
 same column class on extra small screens*/
-.caption {
 
+.caption {
     /*To ensure consistent height rather than let content determine
     dimensions*/
     /*vertical-align: middle;
@@ -413,8 +452,8 @@ same column class on extra small screens*/
     bottom: .3rem;
     padding-top: 5px;
     /*Fallback in case browser doesn't support RGBa*/
-    background-color: rgb(150,150,150,);
-    background-color: rgba(150,150,150,0.75);
+    background-color: rgb(150, 150, 150, );
+    background-color: rgba(150, 150, 150, 0.75);
     /*background-color: rgba(0, 108, 178, 0.75);
     color: #FFFFFF;*/
 }
@@ -426,6 +465,7 @@ same column class on extra small screens*/
 
 
 /*Accordion menu styles*/
+
 .panel-heading h3::after {
     /* Want a white 'minus' symbol for "closed" panels */
     font-family: 'Glyphicons Halflings';
@@ -440,49 +480,50 @@ same column class on extra small screens*/
     content: "\2b";
     color: #000000;
 }
+
+
 /*End of accordion menu styles*/
+
 
 /*End of Section styles*/
 
+
 /*Carousel styles*/
+
 
 /*Changes position of parent wrapper, to ensure absolute position of
 child indicators is relative to the carousel wrapper, not the
 viewport*/
+
 #carousel-example {
-
     /*min-height: 300px;*/
-
 }
 
-.carousel-inner {
+.carousel-inner {}
 
-}
-
-div.item > img, div.item.active > img {
+div.item>img, div.item.active>img {
     /*Needed to set height on responsive images to display correctly*/
     height: 100%
 }
-
 
 .my-carousel-indicators {
     /*To keep carousel indicators over to the right away from header*/
     margin-left: 25%;
     width: 100px;
-
 }
-.carousel-indicators li{
 
-
+.carousel-indicators li {
+    border: 1px solid black;
 }
 
 .carousel-indicators .active {
- /*Slightly increases size of active indicator*/
- width: 12px;
- height: 12px;
- /*Hot Pink colour when active*/
- background-color: #FF1493;
+    /*Slightly increases size of active indicator*/
+    width: 12px;
+    height: 12px;
+    /*Hot Pink colour when active*/
+    background-color: #FF1493;
 }
+
 
 /*Start of Form elements*/
 
@@ -499,32 +540,40 @@ div.item > img, div.item.active > img {
     margin-bottom: 10px;
 }
 
+
 /*Next two declarations alter style of SUBMIT Button on hover */
-.submit-button:hover {
-    /*White text on Hot Pink background*/
-    background:#FF1493;
-    color: #FFFFFF;
-}
 
 .submit-button {
     /*Hot Pink text on white background*/
-    background:#FFFFFF;
+    background: #FFFFFF;
     color: #FF1493;
+    /*Introduces a transition effect on hover over this button*/
+    -webkit-transition: background 1s ease-out, color 1s ease-out;
+    -moz-transition: background 1s ease-out, color 1s ease-out;
+    -ms-transition: background 1s ease-out, color 1s ease-out;
+    -o-transition: background 1s ease-out, color 1s ease-out;
+    transition: background 1s ease-out, color 1s ease-out;
 }
+
+.submit-button:hover {
+    /*White text on Hot Pink background*/
+    background: #FF1493;
+    color: #FFFFFF;
+}
+
 
 /*End of Form Elements*/
 
 
-
 /*Start of Footer styles*/
 
-footer{
+footer {
     /*As per typographic scale, next font size down is 12 pixels*/
     font-size: 12px;
     /*To make text legible across light gray background*/
     color: black;
     /*background: url('http://placehold.it/720x240') no-repeat ;*/
-    background-color: #DDDDDD ;
+    background-color: #DDDDDD;
     /*Image always covers footer, regardless of Footer size. Various browser-specific prefixes provided
     to provide support old browsers*/
     /*-webkit-background-size:cover;
@@ -534,7 +583,7 @@ footer{
     /*background-color: black;*/
 }
 
-footer > section {
+footer>section {
     /*Removes white background of section elements applied for the content sections above*/
     background-color: transparent;
     /*Remove margin that is needed within body of website for reasons outlined*/
@@ -559,141 +608,222 @@ footer a:hover {
 footer li {
     /*On extra small screens bullet points were appearing on the nav list*/
     list-style-type: none;
+    padding-bottom: 10px;
 }
 
 hr {
     background-color: black;
 }
 
+
 /*End of Footer styles*/
+
 
 /*Start of Floating Action Button Styles*/
 
-/*This animation inccrease the FAB from nothing to full size.*/
+
+/*This animation inccrease the FAB from nothing to full size, while also applying a spin effect.*/
+
 @keyframes trans {
     from {
-        transform: scale(0,0);
+        -moz-transform: scale(0, 0) rotate(0deg);
+        -webkit-transform: scale(0, 0) rotate(0deg);
+        -o-transform: scale(0, 0) rotate(0deg);
+        -ms-transform: scale(0, 0) rotate(0deg);
+        transform: scale(0, 0) rotate(0deg);
     }
-
     to {
-        transform: scale(1,1);
+        -moz-transform: scale(1, 1) rotate(720deg);
+        -webkit-transform: scale(1, 1) rotate(720deg);
+        -o-transform: scale(1, 1) rotate(720deg);
+        -ms-transform: scale(1, 1) rotate(720deg);
+        transform: scale(1, 1) rotate(720deg);
     }
 }
 
-/*This animation reduces the FAB from full size to nothing.*/
+
+/*This animation reduces the FAB from full size to nothing, while also applying a reverse spin effect.*/
+
 @keyframes vanish {
     from {
-        -moz-transform: scale(1,1);
-        -webkit-transform: scale(1,1);
-        -o-transform: scale(1,1);
-        -ms-transform: scale(1,1);
-        transform: scale(1,1);
+        -moz-transform: scale(1, 1) rotate(0deg);
+        -webkit-transform: scale(1, 1) rotate(0deg);
+        -o-transform: scale(1, 1) rotate(0deg);
+        -ms-transform: scale(1, 1) rotate(0deg);
+        transform: scale(1, 1) rotate(0deg);
     }
-
     to {
-        -moz-transform: scale(0,0);
-        -webkit-transform: scale(0,0);
-        -o-transform: scale(0,0);
-        -ms-transform: scale(0,0);
-        transform: scale(0,0);
+        -moz-transform: scale(0, 0) rotate(-720deg);
+        -webkit-transform: scale(0, 0) rotate(-720deg);
+        -o-transform: scale(0, 0) rotate(-720deg);
+        -ms-transform: scale(0, 0) rotate(-720deg);
+        transform: scale(0, 0) rotate(-720deg);
     }
 }
+
 
 /*This class makes the FAB appear when applied to the element*/
 
 .appear {
     animation-name: trans;
-    animation-duration: 2s;
+    animation-duration: 1s;
     /*If you want animation to stop at end-point rather than return to starting keyframe*/
     animation-fill-mode: forwards;
 }
 
+
 /*This class makes the FAB disappear when applied to the element*/
+
 .disappear {
     animation-name: vanish;
-    animation-duration: 2s;
+    animation-duration: 1s;
     /*If you want animation to stop at end-point rather than return to starting keyframe*/
     animation-fill-mode: forwards;
 }
 
 #fab {
-
     background-color: #FF1493;
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     border-radius: 50px;
     /*This sets the FAB at fixed location on the viewport.*/
     position: fixed;
     /*left:-150px;*/
-    bottom: 45px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     /*Had issues with FAB displaying on page load, when trigger still visible.
     This is a hack designed to avoid this behaviour. Will be revealed by jQuery at appropriate trigger point.*/
     display: none;
     /*text-align: left;*/
-    -moz-transform: scale(0,0);
-    -webkit-transform: scale(0,0);
-    -o-transform: scale(0,0);
-    -ms-transform: scale(0,0);
-    transform: scale(0,0);
+    -moz-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    transform: scale(0, 0);
 }
 
-#fab > a {
+#fab>a {
     text-decoration: none;
     color: #FFFFFF;
     /*in order to center horizontally*/
     display: inline-block;
-    padding-left: 12px;
+    padding-left: 13px;
     padding-right: 12px;
     /*In order to center vertically*/
     position: absolute;
     top: 50%;
     /*Negative margin set at half-height of child span element*/
-    margin-top: -28px;
+    margin-top: -14px;
 }
 
 #fab-trigger {
     position: absolute;
     bottom: 0px;
 }
+
+
 /*End of Floating Action Button Styles*/
+
+.anchor {
+    display: block;
+    height: 78px;
+    /* this is the height of your header */
+    margin-top: -78px;
+    /* this is again negative value of the height of your header */
+    visibility: hidden;
+}
+
+.green-confetti {
+    background-color: rgb(146, 228, 146);
+    background-color: rgba(146, 228, 146, 1);
+}
+
+.light-green-confetti {
+    background-color: rgb(146, 228, 146);
+    background-color: rgba(146, 228, 146, 0.5);
+}
+
+.blue-confetti {
+    background-color: rgb(159, 216, 239);
+    background-color: rgba(159, 216, 239, 1);
+}
+
+.light-blue-confetti {
+    background-color: rgb(159, 216, 239);
+    background-color: rgba(159, 216, 239, 0.5);
+}
+
+.purple-confetti {
+    background-color: rgb(171, 140, 222);
+    background-color: rgba(171, 140, 222, 1);
+}
+
+.light-purple-confetti {
+    background-color: rgb(171, 140, 222);
+    background-color: rgba(171, 140, 222, 0.5);
+}
+
+.btn {
+    border: 0.5px solid #DDDDDD;
+}
+
+section .img-responsive.center-block {
+    margin-top: 0px;
+}
+
+#carousel-example-services .img-responsive {
+    margin-top: 0px;
+}
+
+.no-caption {
+    background-color: none;
+}
+
 
 /*This media query is specific to small screens, altering the min-height*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .caption {
         /*Caption div was taking up too much space without the p element below it (which
         was removed on extra small spaces)*/
         /*min-height: 50px;*/
         max-height: 100%;
     }
-
     label {
         white-space: normal !important;
         word-wrap: break-word;
         max-width: 100%;
     }
-
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 500px) {
+    h1 {
+        margin-top: 0px;
+    }
+    .header-content {
+        /* Hides paragraph under h1, as layout becomes broken otherwise with content exceeding container */
+        display: none;
+        white-space: normal !important;
+        word-wrap: break-word;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
 
-    li > a {
+@media screen and (max-width: 300px) {
+    li>a {
         min-width: 100%;
         white-space: normal !important;
         word-wrap: break-word;
     }
-
 }
 
-@media screen and (max-width: 229px){
-
+@media screen and (max-width: 229px) {
     header {
         /*Gives additonal margin to top of header as navbar-fixed expands over it when the hamburger
         menu wraps onto a new line when the screen size is compressed*/
-        margin-top: 50px;
+        margin-top: 20px;
     }
-
     /*Attempt to prevent content from spilling out from parent div
     and causing whitespace on right hand side of design on small screens*/
     h1, h2, h3, h4, p, label, .btn {
@@ -704,36 +834,31 @@ hr {
 }
 
 @media screen and (max-width: 100px) {
-
-
-
-   /* .btn {
+    /* .btn {
         white-space: normal !important;
         word-wrap: break-word;
         max-width: 100%;
     }*/
-
     #hamburger {
         /*Needed to remove margins and set maximum width of hamburger for proper layout*/
         margin-left: 0px;
         margin-right: 0px;
         max-width: 100%;
     }
-
     .icon-bar {
         /*Adjustments needed to avoid icon-bars exceeding parent container*/
         max-width: 150%;
         margin-left: 0px;
     }
-
     .container {
         /*Removed padding on left of parent container that was shifting logo to the right*/
         padding-left: 0px;
     }
-
 }
 
+
 /*This was helpful in debugging white-space that was appearing on the right of my design*/
+
 
 /** {
   background: #000 !important;
