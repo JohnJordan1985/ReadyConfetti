@@ -94,6 +94,10 @@ footer>section {
     box-shadow: none;
 }
 
+p {
+    font-size: 16px;
+}
+
 
 /*END section for drop shadows*/
 
@@ -109,24 +113,33 @@ section {
 header {
     /*Need this to position the overlay div on small screens*/
     /*position: relative;*/
-    min-height: 100px;
+    min-height: 300px;
     margin-top: 10px;
     margin-bottom: 40px;
     /*This positioning is for FAB trigger element to be positoned at bottom of header, rather than the top, which it was for some reason, which
     I couldn't figure out*/
     position: relative;
+
+    overflow: hidden;
+
 }
 
 .header-cover {
+    /*I had a solid white background with a gradient applied to the outer edges, but it looked terrible. So used a different approach,
+    one I saw on Kaufmann.org, which was more pleasing*/
+    background: rgb(255, 255, 255); /*Fallback in case older browser that doesn't support rgba is being used*/
+    background: rgba(255, 255, 255, 0.7);
+    /*START OLD EFFECT*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+10,ffffff+90,ffffff+100&0+0,1+10,1+90,0+100 */
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+   /* background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);*/
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /*background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);*/
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /*background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);*/
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);*/
     /* IE6-9 */
+    /*END OLD EFFECT*/
 }
 
 div.overlay {
@@ -134,15 +147,21 @@ div.overlay {
     z-index: 999;
     background-color: white;
     height: 100%;
+    /*I had a solid white background with a gradient applied to the outer edges, but it looked terrible. So used a different approach,
+    one I saw on Kaufmann.org, which was more pleasing*/
+    background: rgb(255, 255, 255); /*Fallback in case older browser that doesn't support rgba is being used*/
+    background: rgba(255, 255, 255, 0.7);
+    /*START OLD EFFECT*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+10,ffffff+90,ffffff+100&0+0,1+10,1+90,0+100 */
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /*background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);*/
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /*background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);*/
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    /*background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);*/
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);*/
     /* IE6-9 */
+    /*END OLD EFFECT*/
 }
 
 header h1 {
@@ -160,6 +179,7 @@ header h1 {
 /*Next two declarations alter style of Sign-Up Button on hover */
 
 .sign-up-button {
+    margin-top: 20px;
     /*White text on Hot Pink background*/
     background: #FF1493;
     color: #FFFFFF;
@@ -501,7 +521,7 @@ viewport*/
 
 .carousel-inner {}
 
-div.item>img, div.item.active>img {
+.header-content>img, div.item>img, div.item.active>img {
     /*Needed to set height on responsive images to display correctly*/
     height: 100%
 }
@@ -568,12 +588,13 @@ div.item>img, div.item.active>img {
 /*Start of Footer styles*/
 
 footer {
+    text-align: center;
     /*As per typographic scale, next font size down is 12 pixels*/
     font-size: 12px;
     /*To make text legible across light gray background*/
-    color: black;
+    color: #FFFFFF;
     /*background: url('http://placehold.it/720x240') no-repeat ;*/
-    background-color: #DDDDDD;
+    background-color: #000000;
     /*Image always covers footer, regardless of Footer size. Various browser-specific prefixes provided
     to provide support old browsers*/
     /*-webkit-background-size:cover;
@@ -597,12 +618,12 @@ footer.row {
 
 footer a {
     /*Change default behaviour of a elements on hover*/
-    color: black;
+    color: #FFFFFF;
 }
 
 footer a:hover {
     /*Change default behaviour of a elements on hover*/
-    color: black;
+    color: #FFFFFF;
 }
 
 footer li {
@@ -612,7 +633,7 @@ footer li {
 }
 
 hr {
-    background-color: black;
+    background-color: #DDDDDD;
 }
 
 
@@ -796,7 +817,7 @@ section .img-responsive.center-block {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
     h1 {
         margin-top: 0px;
     }
